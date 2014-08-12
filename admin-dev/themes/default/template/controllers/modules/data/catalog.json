@@ -1,0 +1,2602 @@
+[
+    {
+        "title": {
+            "text": "Kwixo"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/40.jpg?t=20",
+            "alt": "Kwixo, la solution de paiement nouvelle g\u00e9n\u00e9ration qui va d\u00e9velopper vos ventes !\ufeff    Cr\u00e9er un compte"
+        },
+        "description": {
+            "text": "Kwixo, la solution de paiement nouvelle g\u00e9n\u00e9ration qui va d\u00e9velopper vos ventes !\ufeff    Cr\u00e9er un compte",
+            "href": "http://addons.prestashop.com/fr/modules-paiement-prestashop/40-receiveandpay-devient-kwixo.html?utm_source=v1trunk_api&utm_content=kwixo"
+        },
+        "category": ["Integrations", "Staff Picks"],
+        "subcategory": "Payments & Gateways",
+        "author": "PrestaShop",
+        "price": "free",
+        "top": true,
+        "partner": true,
+        "supersize": true,
+        "version": {"last": "1.6", "releaseDate": "1403621961"}
+    },
+    {
+        "title": {
+            "text": "So Colissimo - Officiel"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/1745.jpg?t=20",
+            "alt": "PrestaShop vous pr\u00e9sente So-Colissimo : d\u00e9couvrez d\u00e8s maintenant la nouvelle solution de livraison de La Poste, exclusivement d\u00e9di\u00e9e \u00e0 l'e-commerce"
+        },
+        "description": {
+            "text": "PrestaShop vous pr\u00e9sente So-Colissimo : d\u00e9couvrez d\u00e8s maintenant la nouvelle solution de livraison de La Poste, exclusivement d\u00e9di\u00e9e \u00e0 l'e-commerce.  So Colissimo est un service de livraison multi-choix, \u00e0 domicile ou hors domicile.  Avec cette nouvelle offre, vos clients e-acheteurs ont d\u00e9sormais la possibilit\u00e9 de choisir leur lieu de livraison au moment de leur commande sur votre site.  Vous leur offrez ainsi la possibilit\u00e9 de choisir leur mode de livraison \u00e0 domicile (remise en bo\u00eete aux lettres ou en mains propres, avec possibilit\u00e9 de livraison sur rendez-vous en soir\u00e9e) ou hors domicile (en espace Cityssimo, dans le bureau de poste de leur choix ou dans un des commerces de proximit\u00e9 de notre r\u00e9seau partenaire).",
+            "href": "http://addons.prestashop.com/fr/transport-logistique-livraison-modules-prestashop/1745-so-colissimo.html?utm_source=v1trunk_api&utm_content=so colissimo - officiel"
+        },
+        "category": ["Others", "Staff Picks"],
+        "subcategory": "Shipping & Logistics",
+        "author": "PrestaShop",
+        "price": "free",
+        "partner": true,
+        "supersize": true
+    },
+    {
+        "title": {
+            "text": "Hipay"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/1746.jpg?t=20",
+            "alt": "Le module HiPay permet de g\u00e9rer vos transactions en ligne sans contrat VAD, avec un syst\u00e8me anti-fraude int\u00e9gr\u00e9"
+        },
+        "description": {
+            "text": "Le module HiPay permet de g\u00e9rer vos transactions en ligne sans contrat VAD, avec un syst\u00e8me anti-fraude int\u00e9gr\u00e9. Via ce module, acc\u00e9dez \u00e0 toutes les solutions de paiement internationales et locales (Visa, Mastercard, ING, Bancontact Mistercash, Sofort, Payshop, Boleto bancario, Ideal, Sisal, Qiwi, Yandex\u2026)",
+            "href": "http://addons.prestashop.com/fr/modules-paiement-prestashop/1746-hipay.html?utm_source=v1trunk_api&utm_content=hipay"
+        },
+        "category": ["Integrations", "Staff Picks"],
+        "subcategory": "Payments & Gateways",
+        "author": "PrestaShop",
+        "price": "free",
+        "partner": true,
+        "supersize": true
+    },
+    {
+        "title": {
+            "text": "Skrill"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/1747.jpg?t=21",
+            "alt": "Plus de 36 millions de titulaires de comptes font d\u00e9j\u00e0 confiance \u00e0 Skrill"
+        },
+        "description": {
+            "text": "Plus de 36 millions de titulaires de comptes font d\u00e9j\u00e0 confiance \u00e0 Skrill. Nos clients peuvent envoyer et recevoir de l'argent dans 200 pays et 40 devises, en toute s\u00e9curit\u00e9 et \u00e0 co\u00fbt avantageux, sans avoir \u00e0 r\u00e9v\u00e9ler leurs coordonn\u00e9es financi\u00e8res personnelles.\ufeff  \u00a0  Cr\u00e9er un compte",
+            "href": "http://addons.prestashop.com/fr/modules-paiement-prestashop/1747-skrill.html?utm_source=v1trunk_api&utm_content=skrill"
+        },
+        "category": ["Integrations", "Staff Picks"],
+        "subcategory": "Payments & Gateways",
+        "author": "PrestaShop",
+        "price": "free",
+        "partner": true
+    },
+    {
+        "title": {
+            "text": "PayPal Europe - Officiel"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/1748.jpg?t=21",
+            "alt": "\u00a0Proposez l'une des meilleures solutions de paiement \u00e0 vos clients"
+        },
+        "description": {
+            "text": "\u00a0Proposez l'une des meilleures solutions de paiement \u00e0 vos clients.  Avec plus de 143\u00a0millions de comptes actifs dans le monde entier, PayPal est une solution de paiement de r\u00e9f\u00e9rence en ligne et sur mobile. Disponible dans 193\u00a0pays et en 26\u00a0devises, PayPal est \u00e9galement l'une des solutions de paiement en ligne les plus connues et les plus fiables selon les clients.    \u00a0Cr\u00e9ez votre compte gratuitement\ufeff !\ufeff",
+            "href": "http://addons.prestashop.com/fr/modules-paiement-prestashop/1748-paypal.html?utm_source=v1trunk_api&utm_content=paypal europe - officiel"
+        },
+        "category": "Integrations",
+        "subcategory": "Payments & Gateways",
+        "author": "PrestaShop",
+        "price": "free",
+        "partner": true
+    },
+    {
+        "title": {
+            "text": "Ogone"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/1798.jpg?t=21",
+            "alt": "Le service de paiement leader en Europe, avec plus de 42 000 clients, dans 45 pays"
+        },
+        "description": {
+            "text": "Le service de paiement leader en Europe, avec plus de 42 000 clients, dans 45 pays.",
+            "href": "http://addons.prestashop.com/fr/modules-paiement-prestashop/1798-ogone.html?utm_source=v1trunk_api&utm_content=ogone"
+        },
+        "category": ["Integrations", "Staff Picks"],
+        "subcategory": "Payments & Gateways",
+        "author": "PrestaShop",
+        "price": "free",
+        "partner": true
+    },
+    {
+        "title": {
+            "text": "Fia-Net Certissim"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/1803.jpg?t=21",
+            "alt": "Gr\u00e2ce \u00e0 Certissim, s\u00e9curisez vos ventes et ma\u00eetrisez vos impay\u00e9s !    E-commer\u00e7ant, vous \u00eates les premi\u00e8res victimes de la fraude sur Internet"
+        },
+        "description": {
+            "text": "Gr\u00e2ce \u00e0 Certissim, s\u00e9curisez vos ventes et ma\u00eetrisez vos impay\u00e9s !    E-commer\u00e7ant, vous \u00eates les premi\u00e8res victimes de la fraude sur Internet. Les transactions frauduleuses entra\u00eenent de nombreux impay\u00e9s, source de pertes financi\u00e8res. B\u00e9n\u00e9ficiez de la force du syst\u00e8me Certissim : 3,5 milliards d'euros de chiffre d'affaires et 20 millions de transactions analys\u00e9s en 2010.*  \u00a0",
+            "href": "http://addons.prestashop.com/fr/securite-paiement-module-prestashop/1803-fia-net-systeme-d-analyse-des-commandes-certissim.html?utm_source=v1trunk_api&utm_content=fia-net certissim"
+        },
+        "category": ["Customer Experience", "Staff Picks"],
+        "subcategory": "Site certification",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Fia-Net Sceau de Confiance"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/1804.jpg?t=21",
+            "alt": "Gr\u00e2ce au Sceau de Confiance FIA-NET, transformez vos visiteurs en acheteurs !    Jouez la transparence aupr\u00e8s des internautes en mettant en avant votre qualit\u00e9 de service"
+        },
+        "description": {
+            "text": "Gr\u00e2ce au Sceau de Confiance FIA-NET, transformez vos visiteurs en acheteurs !    Jouez la transparence aupr\u00e8s des internautes en mettant en avant votre qualit\u00e9 de service.  Le principe est simple : ce sont vos clients qui vous \u00e9valuent. Plus de 12 millions d\u2019avis consommateurs d\u00e9j\u00e0 collect\u00e9s !*  \u00a0  \u00a0",
+            "href": "http://addons.prestashop.com/fr/securite-paiement-module-prestashop/1804-fia-net-sceau-de-confiance.html?utm_source=v1trunk_api&utm_content=fia-net sceau de confiance"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Site certification",
+        "author": "PrestaShop",
+        "price": "free",
+        "partner": true,
+        "supersize": true
+    },
+    {
+        "title": {
+            "text": "TWENGA Export produit & suivi des ventes"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/2053.jpg?t=21",
+            "alt": "Exportez vos produits sur Twenga en quelques clics et gagnez de nouveaux clients\u00a0!\ufeff"
+        },
+        "description": {
+            "text": "Exportez vos produits sur Twenga en quelques clics et gagnez de nouveaux clients\u00a0!\ufeff",
+            "href": "http://addons.prestashop.com/fr/places-de-marche-affiliation-modules-prestashop/2053-twenga-ready-to-sell.html?utm_source=v1trunk_api&utm_content=twenga export produit & suivi des ventes"
+        },
+        "category": "Integrations",
+        "subcategory": "Comparison site & Feed management",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "eBay Marketplace"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/2742.jpg?t=21",
+            "alt": "Exportez facilement vos articles de PrestaShop vers eBay, l'une des places de march\u00e9 les plus importantes au monde, pour attirer de nouveaux clients et potentiellement augmenter vos ventes"
+        },
+        "description": {
+            "text": "Exportez facilement vos articles de PrestaShop vers eBay, l'une des places de march\u00e9 les plus importantes au monde, pour attirer de nouveaux clients et potentiellement augmenter vos ventes.  \u00a0",
+            "href": "http://addons.prestashop.com/fr/places-de-marche-affiliation-modules-prestashop/2742-ebay.html?utm_source=v1trunk_api&utm_content=ebay marketplace"
+        },
+        "category": "Marketing",
+        "subcategory": "Marketplace",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Paiement \u00e0 la livraison"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/4156.jpg?t=21",
+            "alt": "Accept cash on delivery payments"
+        },
+        "description": {
+            "text": "Accept cash on delivery payments",
+            "href": "http://addons.prestashop.com/fr/natif/4156-cashondelivery.html?utm_source=v1trunk_api&utm_content=paiement \u00e0 la livraison"
+        },
+        "category": "Integrations",
+        "subcategory": "Payments & Gateways",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "ganalytics"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/4168.jpg?t=21",
+            "alt": "Integrate Google Analytics script into your shop"
+        },
+        "description": {
+            "text": "Integrate Google Analytics script into your shop",
+            "href": "http://addons.prestashop.com/fr/natif/4168-ganalytics.html?utm_source=v1trunk_api&utm_content=ganalytics"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "prestafraud"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/4181.jpg?t=21",
+            "alt": "Protect your store from fraudulent payments"
+        },
+        "description": {
+            "text": "Protect your store from fraudulent payments",
+            "href": "http://addons.prestashop.com/fr/natif/4181-prestafraud.html?utm_source=v1trunk_api&utm_content=prestafraud"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Site certification",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Shopping Flux"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/4184.jpg?t=21",
+            "alt": "Gr\u00e2ce \u00e0 Shopping Flux, logiciel pointu et innovant, doublez votre chiffre d\u2019affaires, en d\u00e9multipliant votre visibilit\u00e9 sur les comparateurs et les places de mach\u00e9 !"
+        },
+        "description": {
+            "text": "Gr\u00e2ce \u00e0 Shopping Flux, logiciel pointu et innovant, doublez votre chiffre d\u2019affaires, en d\u00e9multipliant votre visibilit\u00e9 sur les comparateurs et les places de mach\u00e9 !",
+            "href": "http://addons.prestashop.com/fr/modules-comparateurs-de-prix/4184-shopping-flux.html?utm_source=v1trunk_api&utm_content=shopping flux"
+        },
+        "category": "Integrations",
+        "subcategory": "Comparison site & Feed management",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "TNT Express France"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/4328.jpg?t=21",
+            "alt": "Livrez vos clients \u00e0 domicile, au bureau, ou dans un point relais"
+        },
+        "description": {
+            "text": "Livrez vos clients \u00e0 domicile, au bureau, ou dans un point relais.\u00a0Avec TNT, proposez un service de transport express et facile, suivi et personnalis\u00e9\u00a0: livraison 24H en France, notifications automatiques de suivi, et choix du mode de redistribution en cas d'absence.\ufeff  \u00a0",
+            "href": "http://addons.prestashop.com/fr/transport-logistique-livraison-modules-prestashop/4328-tnt-express-france.html?utm_source=v1trunk_api&utm_content=tnt express france"
+        },
+        "category": "Others",
+        "subcategory": "Shipping & Logistics",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Avalara - AvaTax"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/5040.jpg?t=21",
+            "alt": "Sales Tax is complicated. AvaTax makes it easy"
+        },
+        "description": {
+            "text": "Sales Tax is complicated. AvaTax makes it easy.",
+            "href": "http://addons.prestashop.com/fr/modules-facturation-compta/5040-avalara-avatax.html?utm_source=v1trunk_api&utm_content=avalara - avatax"
+        },
+        "category": "Site Management",
+        "subcategory": "Taxes & Invoicing",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "1-Click Upgrade - AutoUpgrade"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/5496.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/outils-administration-modules-prestashop/5496-1-click-upgrade-autoupgrade.html?utm_source=v1trunk_api&utm_content=1-click upgrade - autoupgrade"
+        },
+        "category": "Site Management",
+        "subcategory": "Administration",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Yotpo Social Reviews"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/7366.jpg?t=21",
+            "alt": "Yotpo helps you generate tons of reviews and use them to drive qualified traffic and more sales to your store. Yotpo is free and takes 5 minutes to install.  Join the 50,000+ stores using Yotpo today"
+        },
+        "description": {
+            "text": "Yotpo helps you generate tons of reviews and use them to drive qualified traffic and more sales to your store. Yotpo is free and takes 5 minutes to install.  Join the 50,000+ stores using Yotpo today.",
+            "href": "http://addons.prestashop.com/fr/social-commerce-facebook-modules-prestashop/7366-yotpo-social-reviews.html?utm_source=v1trunk_api&utm_content=yotpo social reviews"
+        },
+        "category": "Marketing",
+        "subcategory": "Advertising & Marketing",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Expertise PrestaShop"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/7429.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/7429-gamification.html?utm_source=v1trunk_api&utm_content=expertise prestashop"
+        },
+        "category": "Site Management",
+        "subcategory": "Administration",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Google Sitemap"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/7501.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/7501-gsitemap.html?utm_source=v1trunk_api&utm_content=google sitemap"
+        },
+        "category": "Marketing",
+        "subcategory": "SEO",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Neteven Marketplaces"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/8091.jpg?t=21",
+            "alt": "Acc\u00e9dez au module Neteven, le module gratuit de gestion des places de march\u00e9 le plus complet (Ebay, Amazon, Redoute, Fnac, Zalando, Price minister,Cdiscount.."
+        },
+        "description": {
+            "text": "Acc\u00e9dez au module Neteven, le module gratuit de gestion des places de march\u00e9 le plus complet (Ebay, Amazon, Redoute, Fnac, Zalando, Price minister,Cdiscount...) Synchronisez votre site PrestaShop avec Neteven et pilotez tout le cycle de vente sur les marketplaces de mani\u00e8re simple et int\u00e9gr\u00e9e.Distribuez vos produits en Europe sur les plus grandes places de march\u00e9 depuis une interface unique.",
+            "href": "http://addons.prestashop.com/fr/places-de-marche-affiliation-modules-prestashop/8091-neteven.html?utm_source=v1trunk_api&utm_content=neteven marketplaces"
+        },
+        "category": "Marketing",
+        "subcategory": "Marketplace",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Google Adwords"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/8100.jpg?t=21",
+            "alt": "Faites de la publicit\u00e9 sur Google : attirez plus de clients sur votre site et augmentez vos ventes !"
+        },
+        "description": {
+            "text": "Faites de la publicit\u00e9 sur Google : attirez plus de clients sur votre site et augmentez vos ventes !",
+            "href": "http://addons.prestashop.com/fr/referencement-seo-modules-prestashop/8100-google-adwords.html?utm_source=v1trunk_api&utm_content=google adwords"
+        },
+        "category": "Marketing",
+        "subcategory": "Advertising & Marketing",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "SendinBlue"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/8300.jpg?t=21",
+            "alt": "SendinBlue : LE plugin tout-en-un pour vos emails & SMS (marketing et transactionnels)\ufeff"
+        },
+        "description": {
+            "text": "SendinBlue : LE plugin tout-en-un pour vos emails & SMS (marketing et transactionnels)\ufeff.    Cr\u00e9er un compte",
+            "href": "http://addons.prestashop.com/fr/publicite-marketing-newsletter-modules/8300-mailin.html?utm_source=v1trunk_api&utm_content=sendinblue"
+        },
+        "category": "Others",
+        "subcategory": "Emailing & SMS",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Prediggo Search & Merchandising 1.5"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/8379.jpg?t=21",
+            "alt": "Gr\u00e2ce \u00e0 ce module, Prediggo vous offre la possibilit\u00e9 d\u02bcaugmenter votre taux de conversion de pr\u00e8s de 30%. Comment ? Sell Smarter"
+        },
+        "description": {
+            "text": "Gr\u00e2ce \u00e0 ce module, Prediggo vous offre la possibilit\u00e9 d\u02bcaugmenter votre taux de conversion de pr\u00e8s de 30%. Comment ? Sell Smarter.\ufeff",
+            "href": "http://addons.prestashop.com/fr/merchandising-vente-modules-prestashop/8379-prediggo.html?utm_source=v1trunk_api&utm_content=prediggo search & merchandising 1.5"
+        },
+        "category": "Marketing",
+        "subcategory": "Advertising & Marketing",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Brow.si"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/8609.jpg?t=21",
+            "alt": "Increase customer engagement, drive more traffic and sell more on mobile!  Brow.si powers engaging mobile shopping experiences"
+        },
+        "description": {
+            "text": "Increase customer engagement, drive more traffic and sell more on mobile!  Brow.si powers engaging mobile shopping experiences. This free module developed for PrestaShop seamlessly adds powerful features to your online store when accessed from a mobile device to help your customers easily search, discover, share and purchase your products wherever they are on your site.  Get Brow.si on your site - it's free!",
+            "href": "http://addons.prestashop.com/fr/mobile/8609-browsi.html?utm_source=v1trunk_api&utm_content=brow.si"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Mobile",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Adyen Payments"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/8924.jpg?t=21",
+            "alt": "Une solution de paiement pr\u00eate \u00e0 l'emploi pour accepter plus de 220 m\u00e9thodes de paiement et 187 devises"
+        },
+        "description": {
+            "text": "Une solution de paiement pr\u00eate \u00e0 l'emploi pour accepter plus de 220 m\u00e9thodes de paiement et 187 devises.\ufeff\u00a0Avec le Module Adyen, vous pouvez accepter les paiements en ligne, mobiles et sur \u200b\u200ble point de vente. La gestion des risques est incluse, de m\u00eame que des rapports complets, ainsi qu'un syst\u00e8me de rapprochement.\ufeff  Cr\u00e9er un compte",
+            "href": "http://addons.prestashop.com/fr/modules-paiement-prestashop/8924-adyen.html?utm_source=v1trunk_api&utm_content=adyen payments"
+        },
+        "category": "Integrations",
+        "subcategory": "Payments & Gateways",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Shopgate M-Commerce"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/8936.jpg?t=21",
+            "alt": "Shopgate vous permet d\u2019obtenir un site mobile pour votre site marchand ainsi que les applications iPad, iPhone et Android"
+        },
+        "description": {
+            "text": "Shopgate vous permet d\u2019obtenir un site mobile pour votre site marchand ainsi que les applications iPad, iPhone et Android. Notre solution recommand\u00e9e par PrestaShop s\u2019int\u00e8gre parfaitement \u00e0 votre syst\u00e8me sous forme de plugin. Mise en service de votre espace mobile en quelques heures et sans aucun investissement !\u00a0  \u00a0  Profitez de l'offre sp\u00e9ciale PrestaShop pour cr\u00e9er un compte !\ufeff",
+            "href": "http://addons.prestashop.com/fr/mobile/8936-shopgate.html?utm_source=v1trunk_api&utm_content=shopgate m-commerce"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Mobile",
+        "author": "PrestaShop",
+        "price": "free",
+        "supersize": true
+    },
+    {
+        "title": {
+            "text": "Textmaster - Traductions"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9078.jpg?t=21",
+            "alt": "D\u00e9veloppez votre site \u00e0 l\u2019international et boostez votre chiffre d\u2019affaires ! Gr\u00e2ce au module TextMaster, vous pouvez faire traduire ou corriger vos fiches produit par des traducteurs professionnels"
+        },
+        "description": {
+            "text": "D\u00e9veloppez votre site \u00e0 l\u2019international et boostez votre chiffre d\u2019affaires ! Gr\u00e2ce au module TextMaster, vous pouvez faire traduire ou corriger vos fiches produit par des traducteurs professionnels.  Cr\u00e9er un compte",
+            "href": "http://addons.prestashop.com/fr/international-localisation-modules-prestashop/9078-textmaster.html?utm_source=v1trunk_api&utm_content=textmaster - traductions"
+        },
+        "category": "Others",
+        "subcategory": "Internationalization & Localization",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Virement bancaire"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9130.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9130-bankwire.html?utm_source=v1trunk_api&utm_content=virement bancaire"
+        },
+        "category": "Integrations",
+        "subcategory": "Payments & Gateways",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Liste de souhaits"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9131.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/modules-prestashop/9131-blockwishlist.html?utm_source=v1trunk_api&utm_content=liste de souhaits"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Comparaison des transporteurs"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9132.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9132-carriercompare.html?utm_source=v1trunk_api&utm_content=comparaison des transporteurs"
+        },
+        "category": "Others",
+        "subcategory": "Shipping & Logistics",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Ch\u00e8que"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9133.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9133-cheque.html?utm_source=v1trunk_api&utm_content=ch\u00e8que"
+        },
+        "category": "Integrations",
+        "subcategory": "Payments & Gateways",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Date de livraison"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9134.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9134-dateofdelivery.html?utm_source=v1trunk_api&utm_content=date de livraison"
+        },
+        "category": "Others",
+        "subcategory": "Shipping & Logistics",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Editeur de page d'accueil"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9135.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9135-editorial.html?utm_source=v1trunk_api&utm_content=editeur de page d'accueil"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Ajouter un produit en favori"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9136.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9136-favoriteproducts.html?utm_source=v1trunk_api&utm_content=ajouter un produit en favori"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Flux RSS"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9137.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9137-feeder.html?utm_source=v1trunk_api&utm_content=flux rss"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Relance Clients"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9138.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9138-followup.html?utm_source=v1trunk_api&utm_content=relance clients"
+        },
+        "category": "Marketing",
+        "subcategory": "Advertising & Marketing",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "API Google Analytics"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9139.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9139-gapi.html?utm_source=v1trunk_api&utm_content=api google analytics"
+        },
+        "category": "Site Management",
+        "subcategory": "Administration",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Programme de fid\u00e9lit\u00e9"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9140.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9140-loyalty.html?utm_source=v1trunk_api&utm_content=programme de fid\u00e9lit\u00e9"
+        },
+        "category": "Marketing",
+        "subcategory": "Pricing & Promotion",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Alertes email"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9141.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9141-mailalerts.html?utm_source=v1trunk_api&utm_content=alertes email"
+        },
+        "category": "Site Management",
+        "subcategory": "Administration",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Export CSV pour les newsletters"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9143.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9143-newsletter.html?utm_source=v1trunk_api&utm_content=export csv pour les newsletters"
+        },
+        "category": "Site Management",
+        "subcategory": "Administration",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Commentaires Produits"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9144.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/modules-prestashop/9144-productcomments.html?utm_source=v1trunk_api&utm_content=commentaires produits"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Nettoyage de la base de donn\u00e9es"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9145.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9145-pscleaner.html?utm_source=v1trunk_api&utm_content=nettoyage de la base de donn\u00e9es"
+        },
+        "category": "Site Management",
+        "subcategory": "Administration",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Programme de parrainage"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9146.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9146-referralprogram.html?utm_source=v1trunk_api&utm_content=programme de parrainage"
+        },
+        "category": "Marketing",
+        "subcategory": "Advertising & Marketing",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Envoyer \u00e0 un ami"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9147.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/modules-prestashop/9147-sendtoafriend.html?utm_source=v1trunk_api&utm_content=envoyer \u00e0 un ami"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Filigrane automatique sur les images"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9148.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/9148-watermark.html?utm_source=v1trunk_api&utm_content=filigrane automatique sur les images"
+        },
+        "category": "Site Management",
+        "subcategory": "Administration",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Trustpilot - Avis clients et e-reputation"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/9205.jpg?t=21",
+            "alt": "Collectez vos avis clients et prenez le contr\u00f4le de votre e-reputation gr\u00e2ce \u00e0 Trustpilot"
+        },
+        "description": {
+            "text": "Collectez vos avis clients et prenez le contr\u00f4le de votre e-reputation gr\u00e2ce \u00e0 Trustpilot.  Engagez le dialogue et partagez vos avis sur Google, Facebook et votre site !",
+            "href": "http://addons.prestashop.com/fr/publicite-marketing-newsletter-modules/9205-trustpilot.html?utm_source=v1trunk_api&utm_content=trustpilot - avis clients et e-reputation"
+        },
+        "category": "Marketing",
+        "subcategory": "Advertising & Marketing",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Ecopresto Dropshipping"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/11052.jpg?t=21",
+            "alt": "Ecopresto est une plateforme de dropshipping qui vous permet d'int\u00e9grer en quelques clics de nombreux produits dans votre boutique"
+        },
+        "description": {
+            "text": "Ecopresto est une plateforme de dropshipping qui vous permet d'int\u00e9grer en quelques clics de nombreux produits dans votre boutique. Simplifiez votre sourcing et d\u00e9l\u00e9guez la logistique !\ufeff  \ufeff  Une fois t\u00e9l\u00e9charg\u00e9, ce module n\u00e9cessite la souscription \u00e0 l\u2019abonnement Ecopresto  \u00e0 partir de 149 euros par trimestre  \u00a0  Contactez le service commercial Ecopresto par email\u00a0info@ecopresto.com  ou par t\u00e9l\u00e9phone\u00a002 51 44 82 17\ufeff\ufeff",
+            "href": "http://addons.prestashop.com/fr/transport-logistique-livraison-modules-prestashop/11052-ecopresto.html?utm_source=v1trunk_api&utm_content=ecopresto dropshipping"
+        },
+        "category": "Others",
+        "subcategory": "Shipping & Logistics",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockadvertising"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15215.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15215-blockadvertising.html?utm_source=v1trunk_api&utm_content=blockadvertising"
+        },
+        "category": "Marketing",
+        "subcategory": "Advertising & Marketing",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockbanner"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15216.jpg?t=21",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15216-blockbanner.html?utm_source=v1trunk_api&utm_content=blockbanner"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockbestsellers"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15217.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15217-blockbestsellers.html?utm_source=v1trunk_api&utm_content=blockbestsellers"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockcart"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15218.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15218-blockcart.html?utm_source=v1trunk_api&utm_content=blockcart"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockcategories"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15219.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15219-blockcategories.html?utm_source=v1trunk_api&utm_content=blockcategories"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockcms"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15220.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15220-blockcms.html?utm_source=v1trunk_api&utm_content=blockcms"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockcmsinfo"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15221.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15221-blockcmsinfo.html?utm_source=v1trunk_api&utm_content=blockcmsinfo"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockcontact"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15222.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15222-blockcontact.html?utm_source=v1trunk_api&utm_content=blockcontact"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockcontactinfos"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15223.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15223-blockcontactinfos.html?utm_source=v1trunk_api&utm_content=blockcontactinfos"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockcurrencies"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15224.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15224-blockcurrencies.html?utm_source=v1trunk_api&utm_content=blockcurrencies"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockcustomerprivacy"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15225.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15225-blockcustomerprivacy.html?utm_source=v1trunk_api&utm_content=blockcustomerprivacy"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockfacebook"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15226.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15226-blockfacebook.html?utm_source=v1trunk_api&utm_content=blockfacebook"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blocklanguages"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15227.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15227-blocklanguages.html?utm_source=v1trunk_api&utm_content=blocklanguages"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blocklayered"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15228.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15228-blocklayered.html?utm_source=v1trunk_api&utm_content=blocklayered"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blocklink"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15229.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15229-blocklink.html?utm_source=v1trunk_api&utm_content=blocklink"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockmanufacturer"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15230.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15230-blockmanufacturer.html?utm_source=v1trunk_api&utm_content=blockmanufacturer"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockmyaccount"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15231.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15231-blockmyaccount.html?utm_source=v1trunk_api&utm_content=blockmyaccount"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockmyaccountfooter"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15232.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15232-blockmyaccountfooter.html?utm_source=v1trunk_api&utm_content=blockmyaccountfooter"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blocknewproducts"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15233.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15233-blocknewproducts.html?utm_source=v1trunk_api&utm_content=blocknewproducts"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blocknewsletter"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15234.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15234-blocknewsletter.html?utm_source=v1trunk_api&utm_content=blocknewsletter"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockpaymentlogo"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15235.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15235-blockpaymentlogo.html?utm_source=v1trunk_api&utm_content=blockpaymentlogo"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockpermanentlinks"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15236.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15236-blockpermanentlinks.html?utm_source=v1trunk_api&utm_content=blockpermanentlinks"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockrss"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15238.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15238-blockrss.html?utm_source=v1trunk_api&utm_content=blockrss"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blocksearch"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15239.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15239-blocksearch.html?utm_source=v1trunk_api&utm_content=blocksearch"
+        },
+        "category": "Others",
+        "subcategory": "Other Modules",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blocksharefb"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15240.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15240-blocksharefb.html?utm_source=v1trunk_api&utm_content=blocksharefb"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blocksocial"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15241.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15241-blocksocial.html?utm_source=v1trunk_api&utm_content=blocksocial"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockspecials"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15242.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15242-blockspecials.html?utm_source=v1trunk_api&utm_content=blockspecials"
+        },
+        "category": "Marketing",
+        "subcategory": "Pricing & Promotion",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockstore"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15243.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15243-blockstore.html?utm_source=v1trunk_api&utm_content=blockstore"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blocksupplier"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15244.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15244-blocksupplier.html?utm_source=v1trunk_api&utm_content=blocksupplier"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blocktags"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15245.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15245-blocktags.html?utm_source=v1trunk_api&utm_content=blocktags"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blocktopmenu"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15246.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15246-blocktopmenu.html?utm_source=v1trunk_api&utm_content=blocktopmenu"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockuserinfo"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15247.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15247-blockuserinfo.html?utm_source=v1trunk_api&utm_content=blockuserinfo"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "blockviewed"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15248.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15248-blockviewed.html?utm_source=v1trunk_api&utm_content=blockviewed"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "crossselling"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15249.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15249-crossselling.html?utm_source=v1trunk_api&utm_content=crossselling"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "dashactivity"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15250.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15250-dashactivity.html?utm_source=v1trunk_api&utm_content=dashactivity"
+        },
+        "category": "Site Management",
+        "subcategory": "Dashboard",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "dashgoals"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15251.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15251-dashgoals.html?utm_source=v1trunk_api&utm_content=dashgoals"
+        },
+        "category": "Site Management",
+        "subcategory": "Dashboard",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "dashproducts"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15252.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15252-dashproducts.html?utm_source=v1trunk_api&utm_content=dashproducts"
+        },
+        "category": "Site Management",
+        "subcategory": "Dashboard",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "dashtrends"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15253.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15253-dashtrends.html?utm_source=v1trunk_api&utm_content=dashtrends"
+        },
+        "category": "Site Management",
+        "subcategory": "Dashboard",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "graphnvd3"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15254.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15254-graphnvd3.html?utm_source=v1trunk_api&utm_content=graphnvd3"
+        },
+        "category": "Site Management",
+        "subcategory": "Administration",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "gridhtml"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15255.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15255-gridhtml.html?utm_source=v1trunk_api&utm_content=gridhtml"
+        },
+        "category": "Site Management",
+        "subcategory": "Administration",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "homefeatured"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15256.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15256-homefeatured.html?utm_source=v1trunk_api&utm_content=homefeatured"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "homeslider"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15257.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15257-homeslider.html?utm_source=v1trunk_api&utm_content=homeslider"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "pagesnotfound"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15258.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15258-pagesnotfound.html?utm_source=v1trunk_api&utm_content=pagesnotfound"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "productpaymentlogos"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15259.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15259-productpaymentlogos.html?utm_source=v1trunk_api&utm_content=productpaymentlogos"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "productscategory"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15260.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15260-productscategory.html?utm_source=v1trunk_api&utm_content=productscategory"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "producttooltip"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15261.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15261-producttooltip.html?utm_source=v1trunk_api&utm_content=producttooltip"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "sekeywords"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15262.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15262-sekeywords.html?utm_source=v1trunk_api&utm_content=sekeywords"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "socialsharing"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15263.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15263-socialsharing.html?utm_source=v1trunk_api&utm_content=socialsharing"
+        },
+        "category": "Marketing",
+        "subcategory": "Advertising & Marketing",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsbestcategories"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15264.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15264-statsbestcategories.html?utm_source=v1trunk_api&utm_content=statsbestcategories"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsbestcustomers"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15265.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15265-statsbestcustomers.html?utm_source=v1trunk_api&utm_content=statsbestcustomers"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsbestmanufacturers"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15266.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15266-statsbestmanufacturers.html?utm_source=v1trunk_api&utm_content=statsbestmanufacturers"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsbestproducts"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15267.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15267-statsbestproducts.html?utm_source=v1trunk_api&utm_content=statsbestproducts"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsbestsuppliers"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15268.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15268-statsbestsuppliers.html?utm_source=v1trunk_api&utm_content=statsbestsuppliers"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsbestvouchers"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15269.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15269-statsbestvouchers.html?utm_source=v1trunk_api&utm_content=statsbestvouchers"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statscarrier"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15270.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15270-statscarrier.html?utm_source=v1trunk_api&utm_content=statscarrier"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statscatalog"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15271.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15271-statscatalog.html?utm_source=v1trunk_api&utm_content=statscatalog"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statscheckup"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15272.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15272-statscheckup.html?utm_source=v1trunk_api&utm_content=statscheckup"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsdata"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15273.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15273-statsdata.html?utm_source=v1trunk_api&utm_content=statsdata"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsequipment"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15274.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15274-statsequipment.html?utm_source=v1trunk_api&utm_content=statsequipment"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsforecast"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15275.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15275-statsforecast.html?utm_source=v1trunk_api&utm_content=statsforecast"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statslive"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15276.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15276-statslive.html?utm_source=v1trunk_api&utm_content=statslive"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsnewsletter"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15277.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15277-statsnewsletter.html?utm_source=v1trunk_api&utm_content=statsnewsletter"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsorigin"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15278.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15278-statsorigin.html?utm_source=v1trunk_api&utm_content=statsorigin"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statspersonalinfos"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15279.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15279-statspersonalinfos.html?utm_source=v1trunk_api&utm_content=statspersonalinfos"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsproduct"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15280.jpg?t=22",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15280-statsproduct.html?utm_source=v1trunk_api&utm_content=statsproduct"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsregistrations"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15281.jpg?t=23",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15281-statsregistrations.html?utm_source=v1trunk_api&utm_content=statsregistrations"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statssales"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15282.jpg?t=23",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15282-statssales.html?utm_source=v1trunk_api&utm_content=statssales"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statssearch"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15283.jpg?t=23",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15283-statssearch.html?utm_source=v1trunk_api&utm_content=statssearch"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsstock"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15284.jpg?t=23",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15284-statsstock.html?utm_source=v1trunk_api&utm_content=statsstock"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "statsvisits"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15285.jpg?t=23",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15285-statsvisits.html?utm_source=v1trunk_api&utm_content=statsvisits"
+        },
+        "category": "Marketing",
+        "subcategory": "Analytics & Stats",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "themeconfigurator"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15286.jpg?t=23",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15286-themeconfigurator.html?utm_source=v1trunk_api&utm_content=themeconfigurator"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "trackingfront"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15287.jpg?t=23",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15287-trackingfront.html?utm_source=v1trunk_api&utm_content=trackingfront"
+        },
+        "category": "Others",
+        "subcategory": "Shipping & Logistics",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "vatnumber"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15288.jpg?t=23",
+            "alt": [
+
+            ]
+        },
+        "description": {
+            "text": [
+
+            ],
+            "href": "http://addons.prestashop.com/fr/natif/15288-vatnumber.html?utm_source=v1trunk_api&utm_content=vatnumber"
+        },
+        "category": "Site Management",
+        "subcategory": "Taxes & Invoicing",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "Give.it"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/15784.jpg?t=23",
+            "alt": "Give.it displays a gifting button next your products. Let your customers purchase your products as gifts and send them to their friends via social media"
+        },
+        "description": {
+            "text": "Give.it displays a gifting button next your products. Let your customers purchase your products as gifts and send them to their friends via social media.",
+            "href": "http://addons.prestashop.com/fr/publicite-marketing-newsletter-modules/15784-giveit.html?utm_source=v1trunk_api&utm_content=give.it"
+        },
+        "category": "Marketing",
+        "subcategory": "Advertising & Marketing",
+        "author": "PrestaShop",
+        "price": "free"
+    },
+    {
+        "title": {
+            "text": "SIPS - Atos Worldline"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/1.jpg?t=24",
+            "alt": "Le module de paiement SIPS d'Atos Worldline\u00a0pour PrestaShop est une solution de paiement \u00e0 distance con\u00e7ue pour garantir un tr\u00e8s haut niveau de s\u00e9curit\u00e9 et permettre aux clients d'exploiter toutes ses"
+        },
+        "description": {
+            "text": "Le module de paiement SIPS d'Atos Worldline\u00a0pour PrestaShop est une solution de paiement \u00e0 distance con\u00e7ue pour garantir un tr\u00e8s haut niveau de s\u00e9curit\u00e9 et permettre aux clients d'exploiter toutes ses fonctionnalit\u00e9s sur tous les canaux de vente \u00e0 distance. PayLib et 3D Secure inclus.  \u00a0",
+            "href": "http://addons.prestashop.com/fr/modules-paiement-prestashop/1-sips-atos-worldine.html?utm_source=v1trunk_api&utm_content=sips - atos worldline"
+        },
+        "category": "Integrations",
+        "subcategory": "Payments & Gateways",
+        "author": "PrestaShop",
+        "price": "279.99"
+    },
+    {
+        "title": {
+            "text": "iAdvize"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/1923.jpg?t=24",
+            "alt": "Augmentez facilement votre taux de conversion gr\u00e2ce au Chat en ligne ! Vos visiteurs d\u00e9testent attendre ! Surtout lorsqu'ils ont une question avant de s'engager dans un achat"
+        },
+        "description": {
+            "text": "Augmentez facilement votre taux de conversion gr\u00e2ce au Chat en ligne ! Vos visiteurs d\u00e9testent attendre ! Surtout lorsqu'ils ont une question avant de s'engager dans un achat.  iAdvize est une solution de Clic to Chat, Click to Call et Click vid\u00e9o enrichie qui vous permet de r\u00e9pondre en direct \u00e0 vos visiteurs et de les transformer en clients.",
+            "href": "http://addons.prestashop.com/fr/fonctionnalites-front-office-modules-prestashop/1923-iadvize.html?utm_source=v1trunk_api&utm_content=iadvize"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "PrestaShop",
+        "price": "44.99"
+    },
+    {
+        "title": {
+            "text": "Amazon Market Place"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/2501.jpg?t=24",
+            "alt": "Exclusivit\u00e9 de PrestaShop Addons, le module Amazon Market Place est la solution N\u00b01 pour mettre en ligne ses produits sur Amazon et g\u00e9rer ses commandes de la marketplace"
+        },
+        "description": {
+            "text": "Exclusivit\u00e9 de PrestaShop Addons, le module Amazon Market Place est la solution N\u00b01 pour mettre en ligne ses produits sur Amazon et g\u00e9rer ses commandes de la marketplace.",
+            "href": "http://addons.prestashop.com/fr/places-de-marche-affiliation-modules-prestashop/2501-amazon-market-place.html?utm_source=v1trunk_api&utm_content=amazon market place"
+        },
+        "category": "Marketing",
+        "subcategory": "Marketplace",
+        "author": "Common-Services",
+        "price": "279.99"
+    },
+    {
+        "title": {
+            "text": "Advanced Search 4"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/2778.jpg?t=24",
+            "alt": "Vainqueur des Module Award\u00a0-\u00a0Ajoutez la navigation \u00e0 facettes la plus rapide pour PrestaShop"
+        },
+        "description": {
+            "text": "Vainqueur des Module Award\u00a0-\u00a0Ajoutez la navigation \u00e0 facettes la plus rapide pour PrestaShop",
+            "href": "http://addons.prestashop.com/fr/recherche-et-filtres-modules-prestashop/2778-advanced-search-4.html?utm_source=v1trunk_api&utm_content=advanced search 4"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "Presta-Module",
+        "price": "279.99"
+    },
+    {
+        "title": {
+            "text": "SEO Internal Linking"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/4982.jpg?t=25",
+            "alt": "Am\u00e9liorez votre r\u00e9f\u00e9rencement naturel gr\u00e2ce au maillage interne"
+        },
+        "description": {
+            "text": "Am\u00e9liorez votre r\u00e9f\u00e9rencement naturel gr\u00e2ce au maillage interne",
+            "href": "http://addons.prestashop.com/fr/referencement-seo-modules-prestashop/4982-seo-internal-linking.html?utm_source=v1trunk_api&utm_content=seo internal linking"
+        },
+        "category": ["Marketing", "Staff Picks"],
+        "subcategory": "SEO",
+        "author": "Presta-Module",
+        "price": "204.99"
+    },
+    {
+        "title": {
+            "text": "Multiple Features - Caract\u00e9ristiques sans limites"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/6356.jpg?t=25",
+            "alt": "Multiple Features vous permet d'assigner plusieurs valeurs de caract\u00e9ristiques \u00e0 vos produits"
+        },
+        "description": {
+            "text": "Multiple Features vous permet d'assigner plusieurs valeurs de caract\u00e9ristiques \u00e0 vos produits",
+            "href": "http://addons.prestashop.com/fr/recherche-et-filtres-modules-prestashop/6356-multiple-features-caracteristiques-sans-limites.html?utm_source=v1trunk_api&utm_content=multiple features - caract\u00e9ristiques sans limites"
+        },
+        "category": "Customer Experience",
+        "subcategory": "Front office features",
+        "author": "Presta-Module",
+        "price": "44.99"
+    },
+    {
+        "title": {
+            "text": "Cache Manager"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/6413.jpg?t=25",
+            "alt": "Diminuez le temps de chargement de vos pages"
+        },
+        "description": {
+            "text": "Diminuez le temps de chargement de vos pages",
+            "href": "http://addons.prestashop.com/fr/referencement-seo-modules-prestashop/6413-cache-manager.html?utm_source=v1trunk_api&utm_content=cache manager"
+        },
+        "category": ["Marketing", "Staff Picks"],
+        "subcategory": "SEO",
+        "author": "Presta-Module",
+        "price": "279.99"
+    },
+    {
+        "title": {
+            "text": "Paybox"
+        },
+        "icon": {
+            "src": "http://addons-media.prestashop.com/img/pico/8066.jpg?t=25",
+            "alt": "Le module de paiement Paybox\u00a0pour PrestaShop vous permet de b\u00e9n\u00e9ficier des services de la solution de paiement Paybox qui a \u00e9t\u00e9 d\u00e9velopp\u00e9e pour r\u00e9pondre aux normes en mati\u00e8re de s\u00e9curit\u00e9 des paiements"
+        },
+        "description": {
+            "text": "Le module de paiement Paybox\u00a0pour PrestaShop vous permet de b\u00e9n\u00e9ficier des services de la solution de paiement Paybox qui a \u00e9t\u00e9 d\u00e9velopp\u00e9e pour r\u00e9pondre aux normes en mati\u00e8re de s\u00e9curit\u00e9 des paiements par carte sur les sites e-commerce.  Si l'acheteur choisit de payer sa commande en utilisant Paybox, il est dirig\u00e9 vers la plate-forme de paiement qui lui transmet une page crypt\u00e9e (https) personnalis\u00e9e \u00e0 votre image.\u00a0Apr\u00e8s saisie des donn\u00e9es de sa carte, contr\u00f4le de coh\u00e9rence, passage de filtre anti-fraude et demande d'autorisation aupr\u00e8s du R\u00e9seau Carte Bancaire ou aupr\u00e8s de l'\u00e9metteur (carte privative), le service de paiement Paybox permet au travers d\u2019une relation de \u00ab serveur \u00e0 serveur \u00bb avec votre site PrestaShop, d\u2019\u00e9changer sous forme de \u00ab question / r\u00e9ponse \u00bb en temps r\u00e9el le r\u00e9sultat du paiement.  Les moyens de paiement suivants sont pris en compte par Paybox :    VISA / Mastercards  American Express  Diners Club International  Aurore Cetelem  Cofinoga  CDGP Privilege  JCB  1euro.com  PayPal  Triple Pay  Cash Ticket  Paysafecard  ING Home'Pay  KBC/CBC  Dexia Direct Net  iDeal (ABN AMRO, ING)  weXpay      ONEY \u00be fois  Carte Cadeau Oney  Carte privative Oney  Leetchi  Buyster    Notez que si vous d\u00e9cidez d'installer ce module par vos propres moyens, vous aurez \u00e0 choisir le CGI qui correspond \u00e0 votre serveur, soit parmi ceux disponibles dans le dossier du module, soit directement sur le site de Paybox.\u00a0",
+            "href": "http://addons.prestashop.com/fr/modules-paiement-prestashop/8066-paybox.html?utm_source=v1trunk_api&utm_content=paybox"
+        },
+        "category": "Integrations",
+        "subcategory": "Payments & Gateways",
+        "author": "PrestaShop",
+        "price": "279.99"
+    }
+]

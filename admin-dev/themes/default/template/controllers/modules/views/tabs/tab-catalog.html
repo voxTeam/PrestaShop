@@ -1,0 +1,26 @@
+<div class="row">
+	<div class="col-md-3" id="catalog-nav" >
+		<ul>
+			<li ng-class="{active: catalog.currentCategory == category.name}" ng-repeat="category in catalogCategories" >
+				<a href="" ng-click="setTab(category)">
+					<i ng-class="category.icon" class="icon-fw"></i> {{category.name}} <i ng-show="category.name==='Categories'" class="icon-caret-down expand-all-categories"></i>
+				</a>
+				<ul ng-if="category.name ==='Categories'" ng-show="catalog.currentCategory === 'Categories'">
+					<li ng-repeat='(subCategory, subCategories) in shared.moduleCategories' ng-class="shared.ourSelections[subCategory].class" class="subcategories">
+						<a href="" class="expandable-category" ng-click="setFilters(subCategory)" >
+							<i ng-class="shared.ourSelections[subCategory].icon"></i> {{subCategory}}
+							<i class="icon-caret-down expand-category"></i>
+						</a>
+						<div class="checkbox" ng-repeat='subCategory in subCategories' pretty-checkbox>
+							<label><input type="checkbox" ng-model="checkboxFilters[subCategory]" ng-checked="checkboxFilters[subCategory]" ng-change="filterSubCategories(subCategory)" ><a href="" ng-click="setFilters(category,subCategory)">{{subCategory}}</a></label>
+						</div>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div id="modules-list" class="col-md-9">
+		<div ng-include="catalog.currentCatalogTabTpl"></div>
+		<div ng-show="modulesToDisplay.modules.length == 0" ng-include="'views/empty-list.html'"></div>
+	</div>
+</div>

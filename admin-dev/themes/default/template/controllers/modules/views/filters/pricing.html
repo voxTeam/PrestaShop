@@ -1,0 +1,5 @@
+<div class="btn-group">
+	<button type="button" ng-click="filterPrices('All')" ng-class="{'All': 'active'}[filters.byPrice]" class="btn btn-default">All</button>
+	<button type="button" ng-click="filterPrices('free')" ng-class="{'free': 'active'}[filters.byPrice]" class="btn btn-default">Free</button>
+	<button type="button" ng-click="filterPrices('paid')" ng-class="{'paid': 'active'}[filters.byPrice]" class="btn btn-default">Paid</button>
+</div>

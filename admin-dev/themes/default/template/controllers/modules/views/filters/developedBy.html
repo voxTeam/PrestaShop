@@ -1,0 +1,2 @@
+<label for="byAuthor">Developed by</label>
+<select id="byAuthor" class="form-control" ng-model="filters.byAuthor" ng-options="author as [author+' ('+count+')'] for (author,count) in shared.authors" ng-change="filterByAuthor(filters.byAuthor)"></select>

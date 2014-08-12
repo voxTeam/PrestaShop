@@ -1,0 +1,17 @@
+<div class="module-controls-overlay">
+  <div class="controls-buttons form-group center-block text-center">
+    <button type="button" class="btn btn-default" ng-click="showModuleDetails(module)"><i class="icon-ellipsis-h"></i> Learn more</button>
+    
+    <span ng-if="activetab == '/configure' " class="btn-group">
+      <span ng-if="activetab == '/configure' " class="btn-group">
+      <button ng-if="module.status==='inactive'" type="button" class="btn btn-default"> <i class="icon-power-off"></i> Activate</button>
+      <button ng-if="module.status==='active'" type="button" class="btn btn-default"> <i class="icon-cog"></i> Configure</button>
+      <button type="button" class="btn btn-dropdown"><i class="icon-caret-down"></i></button>
+    </span>
+
+    <span ng-if="activetab == '/' ">
+      <button type="button" class="btn btn-success module-action-install" ng-click="moduleActionInstall(event);"><i class="icon-download"></i> Install</button>
+    </span>
+
+  </div>
+</div>

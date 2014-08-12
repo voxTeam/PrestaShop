@@ -1,0 +1,686 @@
+<header id="header" class="bootstrap">
+  <nav id="header_infos" role="navigation">
+    <div class="navbar-header">
+      <button id="header_nav_toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-primary">
+        <i class="icon-reorder"></i>
+      </button>
+      <a id="header_shopname" href="">
+        <img src="http://fo.demo.prestashop.com/img/prestashop-avatar.png" alt="ps16">
+        PrestaShop 1.6.1
+      </a>
+      <ul id="header_notifs_icon_wrapper">
+        <li id="orders_notif" class="dropdown" data-type="order">
+          <a href="javascript:void(0);" class="dropdown-toggle notifs" data-toggle="dropdown">
+            <i class="icon-shopping-cart"></i>
+            <span id="orders_notif_number_wrapper" class="notifs_badge hide">
+              <span id="orders_notif_value">0</span>
+            </span>
+          </a>
+          <div class="dropdown-menu notifs_dropdown">
+            <section id="orders_notif_wrapper" class="notifs_panel">
+              <div class="notifs_panel_header">
+                <h3>Latest Orders</h3>
+              </div>
+              <div id="list_orders_notif" class="list_notif">
+                <span class="no_notifs">
+                  No new orders have been placed on your shop.
+                </span>
+              </div>
+              <div class="notifs_panel_footer">
+                <a href="">Show all orders</a>
+              </div>
+            </section>
+          </div>
+        </li>
+        <li id="customers_notif" class="dropdown" data-type="customer">
+          <a href="javascript:void(0);" class="dropdown-toggle notifs" data-toggle="dropdown">
+            <i class="icon-user"></i>
+            <span id="customers_notif_number_wrapper" class="notifs_badge hide">
+              <span id="customers_notif_value">0</span>
+            </span>
+          </a>
+          <div class="dropdown-menu notifs_dropdown">
+            <section id="customers_notif_wrapper" class="notifs_panel">
+              <div class="notifs_panel_header">
+                <h3>Latest Registrations</h3>
+              </div>
+              <div id="list_customers_notif" class="list_notif">
+                <span class="no_notifs">
+                  No new customers have registered on your shop.
+                </span>
+              </div>
+              <div class="notifs_panel_footer">
+                <a href="">Show all customers</a>
+              </div>
+            </section>
+          </div>
+        </li>
+        <li id="customer_messages_notif" class="dropdown" data-type="customer_message">
+          <a href="javascript:void(0);" class="dropdown-toggle notifs" data-toggle="dropdown">
+            <i class="icon-envelope"></i>
+            <span id="customer_messages_notif_number_wrapper" class="notifs_badge hide">
+              <span id="customer_messages_notif_value">0</span>
+            </span>
+          </a>
+          <div class="dropdown-menu notifs_dropdown">
+            <section id="customer_messages_notif_wrapper" class="notifs_panel">
+              <div class="notifs_panel_header">
+                <h3>Latest Messages</h3>
+              </div>
+              <div id="list_customer_messages_notif" class="list_notif">
+                <span class="no_notifs">
+                  No new messages have been posted on your shop.
+                </span>
+              </div>
+              <div class="notifs_panel_footer">
+                <a href="">Show all messages</a>
+              </div>
+            </section>
+          </div>
+        </li>
+      </ul>
+      <ul id="header_quick">
+        <li class="dropdown">
+          <a href="" id="quick_select" class="dropdown-toggle" data-toggle="dropdown">Quick Access <i class="icon-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href=""><i class="icon-chevron-right"></i></a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul id="header_employee_box">
+        <li>
+          <a href="" id="header_foaccess" target="_blank" title="View my shop">
+            <i class="icon-star"></i>
+            <span class="string-long">My shop</span>
+            <span class="string-short">Shop</span>
+          </a>
+        </li>
+        <li id="employee_infos" class="dropdown">
+          <a href="" class="employee_name dropdown-toggle" data-toggle="dropdown">
+            <span class="employee_avatar_small">
+              <img class="imgm img-thumbnail" alt="" src="http://profile.prestashop.com/pub%40prestashop.com.jpg" width="32" height="32">
+            </span>
+            <span class="string-long">Me</span>
+            <span class="string-short">Me</span>
+            <i class="caret"></i>
+          </a>
+          <ul id="employee_links" class="dropdown-menu">
+            <li>
+              <span class="employee_avatar">
+                <img class="imgm img-thumbnail" alt="" src="http://profile.prestashop.com/pub%40prestashop.com.jpg" width="96" height="96">
+              </span>
+            </li>
+            <li class="text-center">Me</li>
+            <li class="divider"></li>
+            <li><a href=""><i class="icon-wrench"></i> My preferences</a></li>
+            <li class="divider"></li>
+            <li><a id="header_logout" href=""><i class="icon-signout"></i> Sign out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<div id="main">
+  <div class="bootstrap">
+    <nav id="nav-sidebar" role="navigation">
+      <ul class="menu">
+        <li class="searchtab">
+          <form id="header_search" class="bo_search_form" method="post" action="index.php?controller=AdminSearch&amp;token=d550d3320f6d2f1065e8597f084987cf" role="search">
+            <div class="form-group">
+              <input type="hidden" name="bo_search_type" id="bo_search_type">
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    <i id="search_type_icon" class="icon-search"></i>
+                    <i class="icon-caret-down"></i>
+                  </button>
+                  <ul id="header_search_options" class="dropdown-menu">
+                    <li class="search-all search-option active">
+                      <a href="#" data-value="0" data-placeholder="What are you looking for?" data-icon="icon-search">
+                        <i class="icon-search"></i> Everywhere
+                      </a>
+                    </li>
+                    <li class="divider"></li>
+                    <li class="search-book search-option">
+                      <a href="#" data-value="1" data-placeholder="Product name, SKU, reference..." data-icon="icon-book">
+                        <i class="icon-book"></i> Catalog
+                      </a>
+                    </li>
+                    <li class="search-customers-name search-option">
+                      <a href="#" data-value="2" data-placeholder="Email, name..." data-icon="icon-group">
+                        <i class="icon-group"></i> Customers by name
+                      </a>
+                    </li>
+                    <li class="search-customers-addresses search-option">
+                      <a href="#" data-value="6" data-placeholder="123.45.67.89" data-icon="icon-desktop">
+                        <i class="icon-desktop"></i> Customers by ip address</a>
+                      </li>
+                      <li class="search-orders search-option">
+                        <a href="#" data-value="3" data-placeholder="Order ID" data-icon="icon-credit-card">
+                          <i class="icon-credit-card"></i> Orders
+                        </a>
+                      </li>
+                      <li class="search-invoices search-option">
+                        <a href="#" data-value="4" data-placeholder="Invoice Number" data-icon="icon-book">
+                          <i class="icon-book"></i> Invoices
+                        </a>
+                      </li>
+                      <li class="search-carts search-option">
+                        <a href="#" data-value="5" data-placeholder="Cart ID" data-icon="icon-shopping-cart">
+                          <i class="icon-shopping-cart"></i> Carts
+                        </a>
+                      </li>
+                      <li class="search-modules search-option">
+                        <a href="#" data-value="7" data-placeholder="Module name" data-icon="icon-puzzle-piece">
+                          <i class="icon-puzzle-piece"></i> Modules
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <a href="" class="clear_search hide"><i class="icon-remove"></i></a>
+                  <input id="bo_query" name="bo_query" type="text" class="form-control" value="" placeholder="Search">
+                </div>
+              </div>
+            </form>
+          </li>
+          <li class="maintab" id="maintab-AdminDashboard" data-submenu="1">
+            <a href="" class="title">
+              <i class="icon-AdminDashboard"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="maintab  has_submenu" id="maintab-AdminCatalog" data-submenu="9">
+            <a href="" class="title">
+              <i class="icon-AdminCatalog"></i>
+              <span>Catalog</span>
+            </a>
+            <ul class="submenu">
+              <li id="subtab-AdminProducts">
+                <a href="">
+                  Products
+                </a>
+              </li>
+              <li id="subtab-AdminCategories">
+                <a href="">
+                  Categories
+                </a>
+              </li>
+              <li id="subtab-AdminTracking">
+                <a href="">
+                  Monitoring
+                </a>
+              </li>
+              <li id="subtab-AdminAttributesGroups">
+                <a href="">
+                  Product Attributes
+                </a>
+              </li>
+              <li id="subtab-AdminFeatures">
+                <a href="">
+                  Product Features
+                </a>
+              </li>
+              <li id="subtab-AdminManufacturers">
+                <a href="">
+                  Manufacturers
+                </a>
+              </li>
+              <li id="subtab-AdminSuppliers">
+                <a href="">
+                  Suppliers
+                </a>
+              </li>
+              <li id="subtab-AdminTags">
+                <a href="">
+                  Tags
+                </a>
+              </li>
+              <li id="subtab-AdminAttachments">
+                <a href="">
+                  Attachments
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="maintab  has_submenu" id="maintab-AdminParentOrders" data-submenu="10">
+            <a href="" class="title">
+              <i class="icon-AdminParentOrders"></i>
+              <span>Orders</span>
+            </a>
+            <ul class="submenu">
+              <li id="subtab-AdminOrders">
+                <a href="">
+                  Orders
+                </a>
+              </li>
+              <li id="subtab-AdminInvoices">
+                <a href="">
+                  Invoices
+                </a>
+              </li>
+              <li id="subtab-AdminReturn">
+                <a href="">
+                  Merchandise Returns
+                </a>
+              </li>
+              <li id="subtab-AdminDeliverySlip">
+                <a href="">
+                  Delivery Slips
+                </a>
+              </li>
+              <li id="subtab-AdminSlip">
+                <a href="">
+                  Credit Slips
+                </a>
+              </li>
+              <li id="subtab-AdminStatuses">
+                <a href="">
+                  Statuses
+                </a>
+              </li>
+              <li id="subtab-AdminOrderMessage">
+                <a href="">
+                  Order Messages
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="maintab  has_submenu" id="maintab-AdminParentCustomer" data-submenu="11">
+            <a href="" class="title">
+              <i class="icon-AdminParentCustomer"></i>
+              <span>Customers</span>
+            </a>
+            <ul class="submenu">
+              <li id="subtab-AdminCustomers">
+                <a href="">
+                  Customers
+                </a>
+              </li>
+              <li id="subtab-AdminAddresses">
+                <a href="">
+                  Addresses
+                </a>
+              </li>
+              <li id="subtab-AdminGroups">
+                <a href="">
+                  Groups
+                </a>
+              </li>
+              <li id="subtab-AdminCarts">
+                <a href="">
+                  Shopping Carts
+                </a>
+              </li>
+              <li id="subtab-AdminCustomerThreads">
+                <a href="">
+                  Customer Service
+                </a>
+              </li>
+              <li id="subtab-AdminContacts">
+                <a href="">
+                  Contacts
+                </a>
+              </li>
+              <li id="subtab-AdminGenders">
+                <a href="">
+                  Titles
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="maintab  has_submenu" id="maintab-AdminPriceRule" data-submenu="12">
+            <a href="" class="title">
+              <i class="icon-AdminPriceRule"></i>
+              <span>Price Rules</span>
+            </a>
+            <ul class="submenu">
+              <li id="subtab-AdminCartRules">
+                <a href="">
+                  Cart Rules
+                </a>
+              </li>
+              <li id="subtab-AdminSpecificPriceRule">
+                <a href="">
+                  Catalog Price Rules
+                </a>
+              </li>
+              <li id="subtab-AdminMarketing">
+                <a href="">
+                  Marketing
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="maintab active has_submenu" id="maintab-AdminParentModules" data-submenu="13">
+            <a href="" class="title">
+              <i class="icon-AdminParentModules"></i>
+              <span>Modules</span>
+            </a>
+            <ul class="submenu">
+              <li id="subtab-AdminModules" class="active">
+                <a href="">
+                  Modules
+                </a>
+              </li>
+              <li id="subtab-AdminAddonsCatalog">
+                <a href="">
+                  Modules &amp; Themes Catalog
+                </a>
+              </li>
+              <li id="subtab-AdminModulesPositions">
+                <a href="">
+                  Positions
+                </a>
+              </li>
+              <li id="subtab-AdminPayment">
+                <a href="">
+                  Payment
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="maintab  has_submenu" id="maintab-AdminParentShipping" data-submenu="14">
+            <a href="" class="title">
+              <i class="icon-AdminParentShipping"></i>
+              <span>Shipping</span>
+            </a>
+            <ul class="submenu">
+              <li id="subtab-AdminCarriers">
+                <a href="">
+                  Carriers
+                </a>
+              </li>
+              <li id="subtab-AdminShipping">
+                <a href="">
+                  Preferences
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="maintab  has_submenu" id="maintab-AdminParentLocalization" data-submenu="15">
+            <a href="" class="title">
+              <i class="icon-AdminParentLocalization"></i>
+              <span>Localization</span>
+            </a>
+            <ul class="submenu">
+              <li id="subtab-AdminLocalization">
+                <a href="">
+                  Localization
+                </a>
+              </li>
+              <li id="subtab-AdminLanguages">
+                <a href="">
+                  Languages
+                </a>
+              </li>
+              <li id="subtab-AdminZones">
+                <a href="">
+                  Zones
+                </a>
+              </li>
+              <li id="subtab-AdminCountries">
+                <a href="">
+                  Countries
+                </a>
+              </li>
+              <li id="subtab-AdminStates">
+                <a href="">
+                  States
+                </a>
+              </li>
+              <li id="subtab-AdminCurrencies">
+                <a href="">
+                  Currencies
+                </a>
+              </li>
+              <li id="subtab-AdminTaxes">
+                <a href="">
+                  Taxes
+                </a>
+              </li>
+              <li id="subtab-AdminTaxRulesGroup">
+                <a href="">
+                  Tax Rules
+                </a>
+              </li>
+              <li id="subtab-AdminTranslations">
+                <a href="">
+                  Translations
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="maintab  has_submenu" id="maintab-AdminParentPreferences" data-submenu="16">
+            <a href="" class="title">
+              <i class="icon-AdminParentPreferences"></i>
+              <span>Preferences</span>
+            </a>
+            <ul class="submenu">
+              <li id="subtab-AdminPreferences">
+                <a href="">
+                  General
+                </a>
+              </li>
+              <li id="subtab-AdminOrderPreferences">
+                <a href="">
+                  Orders
+                </a>
+              </li>
+              <li id="subtab-AdminPPreferences">
+                <a href="">
+                  Products
+                </a>
+              </li>
+              <li id="subtab-AdminCustomerPreferences">
+                <a href="">
+                  Customers
+                </a>
+              </li>
+              <li id="subtab-AdminThemes">
+                <a href="">
+                  Themes
+                </a>
+              </li>
+              <li id="subtab-AdminMeta">
+                <a href="">
+                  SEO &amp; URLs
+                </a>
+              </li>
+              <li id="subtab-AdminCmsContent">
+                <a href="">
+                  CMS
+                </a>
+              </li>
+              <li id="subtab-AdminImages">
+                <a href="">
+                  Images
+                </a>
+              </li>
+              <li id="subtab-AdminStores">
+                <a href="">
+                  Store Contacts
+                </a>
+              </li>
+              <li id="subtab-AdminSearchConf">
+                <a href="">
+                  Search
+                </a>
+              </li>
+              <li id="subtab-AdminMaintenance">
+                <a href="">
+                  Maintenance
+                </a>
+              </li>
+              <li id="subtab-AdminGeolocation">
+                <a href="">
+                  Geolocation
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="maintab  has_submenu" id="maintab-AdminTools" data-submenu="17">
+            <a href="" class="title">
+              <i class="icon-AdminTools"></i>
+              <span>Advanced Parameters</span>
+            </a>
+            <ul class="submenu">
+              <li id="subtab-AdminInformation">
+                <a href="">
+                  Configuration Information
+                </a>
+              </li>
+              <li id="subtab-AdminPerformance">
+                <a href="">
+                  Performance
+                </a>
+              </li>
+              <li id="subtab-AdminEmails">
+                <a href="">
+                  E-mail
+                </a>
+              </li>
+              <li id="subtab-AdminImport">
+                <a href="">
+                  CSV Import
+                </a>
+              </li>
+              <li id="subtab-AdminBackup">
+                <a href="">
+                  DB Backup
+                </a>
+              </li>
+              <li id="subtab-AdminRequestSql">
+                <a href="">
+                  SQL Manager
+                </a>
+              </li>
+              <li id="subtab-AdminLogs">
+                <a href="">
+                  Logs
+                </a>
+              </li>
+              <li id="subtab-AdminWebservice">
+                <a href="">
+                  Webservice
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="maintab  has_submenu" id="maintab-AdminAdmin" data-submenu="18">
+            <a href="" class="title">
+              <i class="icon-AdminAdmin"></i>
+              <span>Administration</span>
+            </a>
+            <ul class="submenu">
+              <li id="subtab-AdminAdminPreferences">
+                <a href="">
+                  Preferences
+                </a>
+              </li>
+              <li id="subtab-AdminQuickAccesses">
+                <a href="">
+                  Quick Access
+                </a>
+              </li>
+              <li id="subtab-AdminEmployees">
+                <a href="">
+                  Employees
+                </a>
+              </li>
+              <li id="subtab-AdminProfiles">
+                <a href="">
+                  Profiles
+                </a>
+              </li>
+              <li id="subtab-AdminAccess">
+                <a href="">
+                  Permissions
+                </a>
+              </li>
+              <li id="subtab-AdminTabs">
+                <a href="">
+                  Menus
+                </a>
+              </li>
+              <li id="subtab-AdminGamification">
+                <a href="">
+                  Merchant Expertise
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="maintab  has_submenu" id="maintab-AdminParentStats" data-submenu="19">
+            <a href="" class="title">
+              <i class="icon-AdminParentStats"></i>
+              <span>Stats</span>
+            </a>
+            <ul class="submenu">
+              <li id="subtab-AdminStats">
+                <a href="">
+                  Stats
+                </a>
+              </li>
+              <li id="subtab-AdminSearchEngines">
+                <a href="">
+                  Search Engines
+                </a>
+              </li>
+              <li id="subtab-AdminReferrers">
+                <a href="">
+                  Referrers
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <span class="menu-collapse">
+          <i class="icon-align-justify"></i>
+        </span>
+      </nav>
+      <div id="content" class="bootstrap">
+        <div class="page-head">
+          <h2 class="page-title">Modules: Extend your Shop</h2>
+          <ul class="breadcrumb page-breadcrumb">
+            <li class="breadcrumb-container">
+              <a href="/ps.kg/16/admin-dev/index.php?controller=AdminAdmin&amp;token=5fda51de6806431e71981882d30a7460">
+                <i class="icon-AdminParentModules"></i> Modules
+              </a>
+            </li>
+            <li class="breadcrumb-current">
+              <a href="/ps.kg/16/admin-dev/index.php?controller=AdminEmployees&amp;token=5ed14e311abe05f91a25473afc384d5b"> Catalog</a>
+            </li>
+          </ul>
+          <div class="page-bar toolbarBox">
+            <div class="btn-toolbar">
+              <a href="" class="toolbar_btn dropdown-toolbar navbar-toggle" data-toggle="collapse" data-target="#toolbar-nav"><i class="process-icon-dropdown"></i><span>Menu</span></a>
+              <ul id="toolbar-nav" class="nav nav-pills pull-right collapse navbar-collapse">
+                <li>
+                  <a class="toolbar_btn" href="">
+                    <i class="process-icon-upload"></i>
+                    <div>Upload</div>
+                  </a>
+                </li>
+                <li>
+                  <a class="toolbar_btn" href="">
+                    <i class="process-icon-anchor"></i>
+                    <div>Positions</div>
+                  </a>
+                </li>
+                <li>
+                  <a class="toolbar_btn btn-help" href="">
+                    <i class="process-icon-help"></i>
+                    <div>Help</div>
+                  </a>
+                </li>
+              </ul>   
+            </div>
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-lg-12" ng-include="admin-modules-content.html">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

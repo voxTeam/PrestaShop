@@ -1,0 +1,13 @@
+<div ng-repeat="category in modulesToDisplay.categories | orderBy: categorySorter" class="repeated-item">
+  <div ng-class="category.data.style.class" class="panel">
+    <div class="panel-heading">
+      <i ng-class="category.data.style.icon"></i>
+      {{category.name}}
+    </div>
+    <div masonry masonry-options="masonryOptions">
+      <div class="grid-sizer"></div>
+      <div ng-repeat="(i, module) in category.data.modules | limitTo: category.data.style.limit" ng-include="getTemplate(category.name, i, module)" class="masonry-brick">
+      </div>
+    </div>
+  </div>
+</div>

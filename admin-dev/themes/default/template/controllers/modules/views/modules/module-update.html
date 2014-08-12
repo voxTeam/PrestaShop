@@ -1,0 +1,36 @@
+<div class="media-module media-module-update">
+  <div class="media-module-container">
+    <div class="row module-body">
+      <div class="module-col-icon">
+        <a href="" class="module-icon" >
+          <img class="img-responsive" ng-src="{{module.icon.src}}" alt="{{module.icon.alt}}" >
+        </a>
+      </div>
+      <div class="module-col-content">
+        <div class="module-title">
+          {{module.title.text | limitTo: 50}}
+        </div>
+        <div class="module-update-versions">
+          <span class="badge badge-warning">{{module.version.current}}</span>
+          <i class="icon-arrow-right"></i>
+          <span class="badge badge-success">{{module.version.last}}</span>
+        </div>
+      </div>
+       <button class="btn btn-default module-body-action"><i class="icon-refresh"></i> Update</button>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 module-update">
+        <h4>Changelog</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia in enim iaculis malesuada. Quisque congue fermentum leo et porta.</p>
+        <ul>
+          <li>Pellentesque a quam dui.</li>
+          <li>Pellentesque sed augue id sem aliquet faucibus eu vel odio.</li>
+          <li>Nullam non libero volutpat, pulvinar turpis non, gravida mauris.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row module-footer">
+      <a class="module-read-more" href="">Read more...</a>
+    </div>
+  </div>
+</div>

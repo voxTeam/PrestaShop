@@ -1,0 +1,10 @@
+<div class="panel">
+  <div class="panel-heading">
+    <i ng-class="catalogCategories[1].icon"></i>
+    {{catalogCategories[1].name}}
+  </div>
+  <div masonry masonry-options="masonryOptions">
+    <div class="grid-sizer"></div>
+    <div ng-repeat="(i, module) in modulesToDisplay.modules | filter:{ partner: true}" ng-include="getTemplate(category.name, i, module)" class="masonry-brick"></div>
+  </div>
+</div>

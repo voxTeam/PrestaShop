@@ -1,0 +1,38 @@
+<div class="media-module media-module-taller">
+  <div class="media-module-container">
+    <div class="row module-body">
+      <div class="col-xs-12 module-background" style="background-image:url('images/placeholder-bg.png')">
+        <a href="" class="module-icon" >
+          <img class="img-responsive" ng-src="{{module.icon.src}}" alt="{{module.icon.alt}}">
+        </a>
+      </div>
+      
+      <div class="col-xs-12 module-content">
+        <div class="row">
+          <div class="col-xs-12 module-title">
+            {{module.title.text | limitTo: 50}}
+          </div>
+          <div class="col-xs-10 module-description">
+            <p class="text-muted">{{module.description.text | limitTo: 85}}...</p>
+          </div>
+          <div class="col-xs-2">
+            <div ng-show="module.price == 'free'" class="text-center module-price">{{module.price}}</div>
+            <div ng-show="module.price != 'free'" class="text-center module-price">{{module.price | currency : $}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row module-footer">
+      <div class="col-xs-8 module-category" ng-class="category.data.style.class">
+        <span class="module-parent-category"><i ng-class="module.style.icon"></i></span>
+        <span class="module-category-name">{{module.subcategory}}</span>
+        <span ng-show="module.partner" class="label label-partner pull-right"><i class="icon-certificate"></i> Official</span>
+      </div>
+      <div class="col-xs-4 module-author">
+        by {{module.author}}
+      </div>
+    </div>
+    <div ng-include="'views/modules/module-overlay.html'"></div>
+  </div>
+</div>

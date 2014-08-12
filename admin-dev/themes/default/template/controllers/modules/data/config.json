@@ -1,0 +1,226 @@
+{
+    "updates":[
+        {
+            "title": {
+                "text": "Kwixo"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/40.jpg?t=20"
+            },
+            "changelog": {
+                "text": "Kwixo, la solution de paiement nouvelle g\u00e9n\u00e9ration qui va d\u00e9velopper vos ventes !\ufeff    Cr\u00e9er un compte"
+            },
+            "version": {"last": "1.6", "current": "1.5" , "releaseDate": "1403621961"}
+        },
+        {
+            "title": {
+                "text": "So Colissimo - Officiel"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/1745.jpg?t=20"
+            },
+            "changelog": {
+                "text": "PrestaShop vous pr\u00e9sente So-Colissimo : d\u00e9couvrez d\u00e8s maintenant la nouvelle solution de livraison de La Poste, exclusivement d\u00e9di\u00e9e \u00e0 l'e-commerce.  So Colissimo est un service de livraison multi-choix, \u00e0 domicile ou hors domicile.  Avec cette nouvelle offre, vos clients e-acheteurs ont d\u00e9sormais la possibilit\u00e9 de choisir leur lieu de livraison au moment de leur commande sur votre site.  Vous leur offrez ainsi la possibilit\u00e9 de choisir leur mode de livraison \u00e0 domicile (remise en bo\u00eete aux lettres ou en mains propres, avec possibilit\u00e9 de livraison sur rendez-vous en soir\u00e9e) ou hors domicile (en espace Cityssimo, dans le bureau de poste de leur choix ou dans un des commerces de proximit\u00e9 de notre r\u00e9seau partenaire)."
+            },
+            "version": {"last": "1.6", "current": "1.5" , "releaseDate": "1403621961"}
+        }
+    ],
+
+    "warnings": [
+        {
+            "title": {
+                "text": "Kwixo"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/40.jpg?t=20"
+            },
+            "message": {
+                "text": "Kwixo, la solution de paiement nouvelle g\u00e9n\u00e9ration qui va d\u00e9velopper vos ventes !\ufeff    Cr\u00e9er un compte"
+            },
+            "date": "1403621961"
+        },
+        {
+            "title": {
+                "text": "So Colissimo - Officiel"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/1745.jpg?t=20"
+            },
+            "message": {
+                "text": "PrestaShop vous pr\u00e9sente So-Colissimo : d\u00e9couvrez d\u00e8s maintenant la nouvelle solution de livraison de La Poste, exclusivement d\u00e9di\u00e9e \u00e0 l'e-commerce.  So Colissimo est un service de livraison multi-choix, \u00e0 domicile ou hors domicile.  Avec cette nouvelle offre, vos clients e-acheteurs ont d\u00e9sormais la possibilit\u00e9 de choisir leur lieu de livraison au moment de leur commande sur votre site.  Vous leur offrez ainsi la possibilit\u00e9 de choisir leur mode de livraison \u00e0 domicile (remise en bo\u00eete aux lettres ou en mains propres, avec possibilit\u00e9 de livraison sur rendez-vous en soir\u00e9e) ou hors domicile (en espace Cityssimo, dans le bureau de poste de leur choix ou dans un des commerces de proximit\u00e9 de notre r\u00e9seau partenaire)."
+            },
+            "date": "1403621961"
+        }
+    ],
+
+    "modules": [
+        {
+            "title": {
+                "text": "Kwixo"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/40.jpg?t=20",
+                "alt": "Kwixo, la solution de paiement nouvelle g\u00e9n\u00e9ration qui va d\u00e9velopper vos ventes !\ufeff    Cr\u00e9er un compte"
+            },
+            "description": {
+                "text": "Kwixo, la solution de paiement nouvelle g\u00e9n\u00e9ration qui va d\u00e9velopper vos ventes !\ufeff    Cr\u00e9er un compte",
+                "href": "http://addons.prestashop.com/fr/modules-paiement-prestashop/40-receiveandpay-devient-kwixo.html?utm_source=v1trunk_api&utm_content=kwixo"
+            },
+            "category": ["Integrations"],
+            "subcategory": "Payments & Gateways",
+            "author": "PrestaShop",
+            "status": "active",
+            "version": {"last": "1.6", "releaseDate": "1403621961"}
+        },
+        {
+            "title": {
+                "text": "Hipay"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/1746.jpg?t=20",
+                "alt": "Le module HiPay permet de g\u00e9rer vos transactions en ligne sans contrat VAD, avec un syst\u00e8me anti-fraude int\u00e9gr\u00e9"
+            },
+            "description": {
+                "text": "Le module HiPay permet de g\u00e9rer vos transactions en ligne sans contrat VAD, avec un syst\u00e8me anti-fraude int\u00e9gr\u00e9. Via ce module, acc\u00e9dez \u00e0 toutes les solutions de paiement internationales et locales (Visa, Mastercard, ING, Bancontact Mistercash, Sofort, Payshop, Boleto bancario, Ideal, Sisal, Qiwi, Yandex\u2026)",
+                "href": "http://addons.prestashop.com/fr/modules-paiement-prestashop/1746-hipay.html?utm_source=v1trunk_api&utm_content=hipay"
+            },
+            "category": ["Integrations"],
+            "subcategory": "Payments & Gateways",
+            "author": "PrestaShop",
+            "status": "inactive",
+            "version": {"last": "1.6", "releaseDate": "1403621961"}
+        },
+        {
+            "title": {
+                "text": "Date de livraison"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/9134.jpg?t=21",
+                "alt": [
+
+                ]
+            },
+            "description": {
+                "text": [
+
+                ],
+                "href": "http://addons.prestashop.com/fr/natif/9134-dateofdelivery.html?utm_source=v1trunk_api&utm_content=date de livraison"
+            },
+            "category": "Others",
+            "subcategory": "Shipping & Logistics",
+            "author": "PrestaShop",
+            "status": "active",
+            "version": {"last": "1.6", "releaseDate": "1403621961"}
+        },
+        {
+            "title": {
+                "text": "Editeur de page d'accueil"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/9135.jpg?t=21",
+                "alt": [
+
+                ]
+            },
+            "description": {
+                "text": [
+
+                ],
+                "href": "http://addons.prestashop.com/fr/natif/9135-editorial.html?utm_source=v1trunk_api&utm_content=editeur de page d'accueil"
+            },
+            "category": "Customer Experience",
+            "subcategory": "Front office features",
+            "author": "PrestaShop",
+            "status": "inactive",
+            "version": {"last": "1.6", "releaseDate": "1403621961"}
+        },
+        {
+            "title": {
+                "text": "Ajouter un produit en favori"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/9136.jpg?t=21",
+                "alt": [
+
+                ]
+            },
+            "description": {
+                "text": [
+
+                ],
+                "href": "http://addons.prestashop.com/fr/natif/9136-favoriteproducts.html?utm_source=v1trunk_api&utm_content=ajouter un produit en favori"
+            },
+            "category": "Customer Experience",
+            "subcategory": "Front office features",
+            "author": "PrestaShop",
+            "status": "active",
+            "version": {"last": "1.6", "releaseDate": "1403621961"}
+        },
+        {
+            "title": {
+                "text": "Flux RSS"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/9137.jpg?t=21",
+                "alt": [
+
+                ]
+            },
+            "description": {
+                "text": [
+
+                ],
+                "href": "http://addons.prestashop.com/fr/natif/9137-feeder.html?utm_source=v1trunk_api&utm_content=flux rss"
+            },
+            "category": "Customer Experience",
+            "subcategory": "Front office features",
+            "author": "PrestaShop",
+            "status": "inactive",
+            "version": {"last": "1.6", "releaseDate": "1403621961"}
+        },
+        {
+            "title": {
+                "text": "Relance Clients"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/9138.jpg?t=21",
+                "alt": [
+
+                ]
+            },
+            "description": {
+                "text": [
+
+                ],
+                "href": "http://addons.prestashop.com/fr/natif/9138-followup.html?utm_source=v1trunk_api&utm_content=relance clients"
+            },
+            "category": "Marketing",
+            "subcategory": "Advertising & Marketing",
+            "author": "PrestaShop",
+            "status": "active",
+            "version": {"last": "1.6", "releaseDate": "1403621961"}
+        },
+        {
+            "title": {
+                "text": "API Google Analytics"
+            },
+            "icon": {
+                "src": "http://addons-media.prestashop.com/img/pico/9139.jpg?t=21",
+                "alt": [
+
+                ]
+            },
+            "description": {
+                "text": [
+
+                ],
+                "href": "http://addons.prestashop.com/fr/natif/9139-gapi.html?utm_source=v1trunk_api&utm_content=api google analytics"
+            },
+            "category": "Site Management",
+            "subcategory": "Administration",
+            "author": "PrestaShop",
+            "status": "inactive",
+            "version": {"last": "1.6", "releaseDate": "1403621961"}
+        }
+    ]
+}

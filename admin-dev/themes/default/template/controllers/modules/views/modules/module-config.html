@@ -1,0 +1,39 @@
+<div class="media-module media-module-config" ng-class="module.status">
+  <div class="media-module-container">
+    <div class="row module-body">
+      <div class="module-col-icon">
+        <a href="" class="module-icon" >
+          <img class="img-responsive" ng-src="{{module.icon.src}}" alt="{{module.icon.alt}}" >
+        </a>
+      </div>
+      <div class="module-col-content">
+        <div class="module-title">
+          {{module.title.text | limitTo: 50}}
+        </div>
+        <div class="row">
+          <div class="col-xs-12 module-description">
+            <p class="text-muted">{{module.description.text | limitTo: 85}}...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div ng-if="module.status==='active'" class="row module-footer">
+      <div class="col-xs-6">
+      <div class="label label-inactive"><i class="icon-mobile"></i></div>
+        <div class="label label-inactive"><i class="icon-tablet"></i></div>
+        <div class="label label-active"><i class="icon-desktop"></i></div>
+      </div>
+      <div class="col-xs-6">
+        <div class="label label-active"><i class="icon-wrench"></i></div>
+        <div class="label label-active"><i class="icon-refresh"></i></div>
+        <div class="label label-active"><i class="icon-bell"></i></div>
+      </div>
+    </div>
+    <div ng-if="module.status==='inactive'" class="row module-footer">
+      <div class="col-xs-12">
+        <div class="label label-inactive"><i class="icon-power-off"></i> Inactive</div>
+      </div>
+    </div>
+    <div ng-include="'views/modules/module-overlay.html'"></div>
+  </div>
+</div>

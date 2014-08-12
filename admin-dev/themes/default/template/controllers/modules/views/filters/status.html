@@ -1,0 +1,11 @@
+<div class="btn-group">
+	<button type="button" ng-click="filterStatus('All')" ng-class="{'All': 'active'}[filters.byStatus]" class="btn btn-default">
+		All
+	</button>
+	<button type="button" ng-click="filterStatus('active')" ng-class="{'active': 'active'}[filters.byStatus]" class="btn btn-default module-active-btn">
+		Active
+	</button>
+	<button type="button" ng-click="filterStatus('inactive')" ng-class="{'inactive': 'active'}[filters.byStatus]" class="btn btn-default module-inactive-btn">
+		Inactive
+	</button>
+</div>

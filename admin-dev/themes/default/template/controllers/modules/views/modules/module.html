@@ -1,0 +1,43 @@
+<div class="media-module">
+  <div class="media-module-container">
+    <div class="row module-body">
+      <div class="module-col-icon">
+        <a href="" class="module-icon">
+          <img class="img-responsive" ng-src="{{module.icon.src}}" alt="{{module.icon.alt}}">
+        </a>
+      </div>
+      <div class="module-col-content">
+        <div class="module-title">
+          {{module.title.text | limitTo: 50}}
+        </div>
+        <div class="row">
+          <div class="col-xs-9 module-description">
+            <p class="text-muted">{{module.description.text | limitTo: 85}}...</p>
+          </div>
+          <div class="col-xs-3">
+            <div ng-show="module.price == 'free'" class="text-center module-price">{{module.price}}</div>
+            <div ng-show="module.price != 'free'" class="text-center module-price">{{module.price | currency : $}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row module-footer">
+      <div class="col-xs-8 module-category" ng-class="category.data.style.class">
+        <span class="module-parent-category"><i ng-class="module.style.icon"></i></span>
+        <span class="module-category-name">{{module.subcategory}}</span>
+        <span ng-show="module.partner" class="label label-partner pull-right"><i class="icon-certificate"></i> Official</span>
+      </div>
+      <div class="col-xs-4 module-author">
+        by {{module.author}}
+      </div>
+    </div>
+      <div ng-include="'views/modules/module-overlay.html'"></div>
+  </div>
+  <!-- <div ng-include="'views/modules/module-install.html'"></div> -->
+  <div class="module-install hide">
+    <span class="module-install-message">Install in progress...</span>
+    <div class="install-progress">
+      <div class="install-progress-bar"></div>
+    </div>
+  </div>
+</div>

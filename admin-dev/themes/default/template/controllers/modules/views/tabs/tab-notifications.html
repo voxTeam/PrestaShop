@@ -1,0 +1,27 @@
+<div id="modules-list">
+	<div class="module-warnings panel">
+		<h3><i class="icon-warning"></i> Warnings</h3>
+		<div class="row">
+			<div class="col-md-3">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia in enim iaculis malesuada. Quisque congue fermentum leo et porta. Pellentesque a quam dui.</p>
+			</div>
+			<div class="col-md-8 col-md-push-1">
+				<div ng-repeat="module in warnings" ng-include="'views/modules/module-warning.html'"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="module-updates panel">
+		<h3><i class="icon-refresh"></i> Modules Updates</h3>
+		<div class="row">	
+			<div class="col-md-3">
+				<p>Nunc lacinia in enim iaculis malesuada. Quisque congue fermentum leo et porta. Pellentesque a quam dui. Pellentesque sed augue id sem aliquet faucibus eu vel odio.</p>
+				<button type="button" class="btn btn-default btn-block">Check for Updates</button>
+				<button type="button" class="btn btn-default btn-block">Update All</button>
+			</div>
+			<div class="col-md-8 col-md-push-1">
+				<div ng-repeat="module in updates" ng-include="'views/modules/module-update.html'"></div>
+			</div>
+		</div>
+	</div>
+</div>

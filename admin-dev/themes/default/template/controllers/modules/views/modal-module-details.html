@@ -1,0 +1,86 @@
+<div id="module-details" class="modal fade bootstrap" ng-controller="ModuleDetailsCtrl">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="row">
+          <div class="col-lg-2">
+            <img class="module-icon img-responsive" ng-src="{{module.icon.src}}">
+          </div>
+          <div class="col-lg-8">
+            <h2 class="modal-title">{{module.title.text}} <small>v1.3</small></h2>
+          </div>
+          <div class="col-lg-2">
+            <button class="btn btn-success pull-right">Get Module - {{module.price | currency}}</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-8">
+            <h3>Merchant Benefice</h3>
+            <p>{{module.description.text}}</p>
+          </div>
+          <div class="col-md-4">
+            <h4>Developper Infos</h4>
+            <span>by PrestaShop</span>
+            <br><br>
+            <div class="row">
+              <div class="col-md-6">
+                <a href=""><i class="icon-envelope-o"></i> Email</a>
+              </div>
+              <div class="col-md-6">
+                <a href=""><i class="icon-wrench"></i> Support</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#screenshots" data-toggle="tab" target="_self">Screenshots</a></li>
+          <li><a href="#merchant-insights" data-toggle="tab" target="_self">Merchant Insights</a></li>
+          <li><a href="#change-log" data-toggle="tab" target="_self">Change Log</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="screenshots">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="module-screenshot-container"></div>
+              </div>
+              <div class="col-sm-4">
+                <div class="module-screenshot-container"></div>
+              </div>
+              <div class="col-sm-4">
+                <div class="module-screenshot-container"></div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="merchant-insights">...</div>
+          <div class="tab-pane" id="changelog">...</div>
+        </div>
+        <hr>
+        <h4>You might also be interested in</h4>
+        <div class="row">
+          <div class="col-md-4">
+            <img class="module-icon img-responsive" ng-src="{{module.icon.src}}">
+            <h5>Banner Block</h5>
+            <p>Nunc lacinia in enim iaculis malesuada.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="module-icon img-responsive" ng-src="{{module.icon.src}}">
+            <h5>Banner Block</h5>
+            <p>Quisque congue fermentum leo et porta.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="module-icon img-responsive" ng-src="{{module.icon.src}}">
+            <h5>Banner Block</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

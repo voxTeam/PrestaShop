@@ -2339,7 +2339,9 @@ class AdminControllerCore extends Controller
 			'current' => self::$currentIndex,
 			'token' => $this->token,
 			'host_mode' => defined('_PS_HOST_MODE_') ? 1 : 0,
-			'stock_management' => (int)Configuration::get('PS_STOCK_MANAGEMENT')
+			'stock_management' => (int)Configuration::get('PS_STOCK_MANAGEMENT'),
+			'current_admin_theme' => $this->bo_theme,
+			'current_admin_theme_dir' => $this->admin_webpath.'/themes/'.$this->bo_theme
 		));
 
 		if ($this->display_header)

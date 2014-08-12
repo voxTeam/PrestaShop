@@ -1,0 +1,70 @@
+{
+    "selection": {
+        "Staff Picks": {
+            "priority": 1,
+            "icon": "icon-thumb-tack",
+            "class": "staff-picks",
+            "filter": "module['Staff Picks' == true]",
+            "limit": 6
+        },
+        "Customer Experience": {
+            "priority": 2,
+            "icon": "icon-user",
+            "class": "customer-experience",
+            "limit": 6
+        },
+        "Site Management": {
+            "priority": 3,
+            "icon": "icon-eye",
+            "class": "site-management",
+            "limit": 6
+        },
+        "Marketing": {
+            "priority": 4,
+            "icon": "icon-tags",
+            "class": "marketing",
+            "limit": 6
+        },
+        "Integrations": {
+            "priority": 5,
+            "icon": "icon-puzzle-piece",
+            "class": "integrations",
+            "limit": 6
+        }
+    },
+    "categories": {
+        "Customer Experience": [
+            "Checkout",
+            "Social Networks",
+            "Front office features",
+            "International & Localization",
+            "Merchandising",
+            "Mobile",
+            "Ordering Process",
+            "Slideshows",
+            "Site certification"
+        ],
+        "Site Management": [
+            "Administration",
+            "Taxes & Invoicing",
+            "Content Management",
+            "Dashboard",
+            "Export",
+            "Quick / Bulk update"
+        ],
+        "Marketing": [
+            "Advertising & Marketing",
+            "Analytics & Stats",
+            "Emailling & SMS",
+            "Marketplace",
+            "Pricing & Promotion",
+            "SEO"
+        ],
+        "Integrations": [
+            "Migration tools & CMS",
+            "Payments & Gateways",
+            "Shipping & Logistic",
+            "Comparators & Feed management"
+        ]
+    }
+}

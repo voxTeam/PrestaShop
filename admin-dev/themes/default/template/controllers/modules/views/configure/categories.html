@@ -1,0 +1,48 @@
+<div class="modules-category-header" ng-if="modulesToDisplay.categories.length===1">
+  <div class="row">
+    <div class="col-md-3 module-category-illus-container">
+        <img src="images/banner-category.png" class="img-responsive" alt="">
+    </div>
+    <div class="col-md-9">
+        <h3>{{modulesToDisplay.categories[0].name}}</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia in enim iaculis malesuada. Quisque congue fermentum leo et porta. Pellentesque a quam dui.</p>
+        <button class="btn btn-primary"><i class="icon-arrow-circle-right"></i> Explore our selection</button>
+    </div>
+  </div>
+</div>
+
+<form class="form-inline modules-filters">
+  <div class="form-group pull-right" ng-include="'views/filters/switchGridList.html'"></div>
+  <div class="form-group" ng-include="'views/filters/status.html'"></div>
+  <div class="form-group" ng-include="'views/filters/sortBy.html'"></div>
+  <div class="form-group" ng-include="'views/filters/developedBy.html'"></div>
+</form>
+
+<div ng-if="filters.sortBy === 'Category' && currentTemplate === 'grid'" ng-repeat="category in modulesToDisplay.categories | orderBy: categorySorter">
+  <div ng-class="category.data.style.class" class="panel">
+    <div class="panel-heading">
+      <i ng-class="category.data.style.icon"></i>
+      {{category.name}}
+    </div>
+    <div ng-repeat="subcategory in category.data.subcategories">
+      <span class="module-category-title" ng-class="category.data.style.class" >{{subcategory.name}} <span class="badge">{{subcategory.data.modules.length}}</span></span> 
+      <div masonry masonry-options="masonryOptions" >
+        <div class="grid-sizer"></div>
+        <div ng-include="'views/modules/module-config.html'" ng-repeat="(i, module) in subcategory.data.modules" class="masonry-brick"></div>
+      </div>
+      <!-- <div ng-include="'views/modules/module-explore.html'"></div> -->
+    </div>
+  </div>
+</div>
+
+<div ng-if="filters.sortBy === 'Abc' && currentTemplate === 'grid'">
+    <div ng-include="'views/modules/module-config.html'" ng-repeat="module in modulesToDisplay.modules | orderBy:'title.text'"></div>
+</div>
+
+<div ng-if="currentTemplate === 'list'">
+  <div ng-include="'views/bulk-actions.html'"></div>
+  <div class="modules-list-container">
+    <div ng-include="'views/modules/module-config-list.html'" ng-repeat="module in modulesToDisplay.modules"></div>
+  </div>
+  <div ng-include="'views/bulk-actions.html'"></div>
+</div>

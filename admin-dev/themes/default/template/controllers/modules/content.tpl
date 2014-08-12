@@ -22,16 +22,13 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+<div ng-app="modulesApp" class="ps_back-office page-sidebar adminmodules" ng-controller="MainCtrl">
+	<div ng-include="views/ps-admin-frame.html"></div>
+	<div ng-include="views/modal-module-details.html"></div>
 
-{if isset($module_content)}
-	{$module_content}
-{else}
-	{if !isset($smarty.get.configure)}
-		{include file='controllers/modules/js.tpl'}
-		{if isset($smarty.get.select) && $smarty.get.select eq 'favorites'}
-			{include file='controllers/modules/favorites.tpl'}
-		{else}
-			{include file='controllers/modules/page.tpl'}
-		{/if}
-	{/if}
-{/if}
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+</div>

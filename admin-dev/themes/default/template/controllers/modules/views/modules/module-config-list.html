@@ -1,0 +1,25 @@
+<div class="media-module media-module-list" ng-class="{selected: bulkSelectedModules.modules[module.id]}">
+  <div class="media-module-container" ng-class="module.status">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="checkbox" pretty-checkbox>
+          <label>
+            <input type="checkbox" ng-model="bulkSelectedModules.modules[module.id]" ng-checked="bulkSelectedModules.modules[module.id]" ng-change="selectModule(module)" >
+          </label>
+        </div>
+        <span href="" class="module-list-icon">
+          <img ng-src="{{module.icon.src}}" alt="{{module.icon.alt}}" width="26px" height="26px">
+        </span>
+        <span class="module-list-title">
+          {{module.title.text | limitTo: 50}}
+        </span>
+      </div>
+      <div class="col-lg-3">
+        
+      </div>
+      <div class="col-lg-3">
+        
+      </div>
+    </div>
+  </div>
+</div>

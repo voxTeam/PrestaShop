@@ -1,0 +1,29 @@
+<div class="modules-bulk" ng-show="modulesToDisplay.modules.length > 0">
+	<button ng-if="bulkSelectedModules.selectAll" ng-click="selectAll()" class="btn btn-default"> <i class="icon-check-square-o"></i> Select All</button>
+	<button ng-if="bulkSelectedModules.unselectAll" ng-click="unselectAll()" class="btn btn-default"> <i class="icon-square-o"></i> Unselect All</button>
+
+	<button ng-if="bulkSelectedModules.updateAll" ng-click="" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Update all selected"><i class="icon-refresh"></i></button>
+
+	<div class="btn-group">
+		<button ng-if="bulkSelectedModules.activateAll" ng-click="" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Activate all selected"><i class="icon-power-off text-success"></i></button>
+		<button ng-if="bulkSelectedModules.unactivateAll" ng-click="" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Inactivate all selected"><i class="icon-power-off text-danger"></i></button>
+	</div>
+
+	<div class="btn-group">
+		<button ng-if="bulkSelectedModules.activateMobileAll" ng-click="" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Activate all selected for Mobile"><i class="icon-mobile text-success"></i></button>
+		<button ng-if="bulkSelectedModules.unactivateMobileAll" ng-click="" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Inctivate all selected for Mobile"><i class="icon-mobile text-danger"></i></button>
+	</div>
+
+	<div class="btn-group">
+		<button ng-if="bulkSelectedModules.activateTabletAll" ng-click="" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Activate all selected for Tablet"><i class="icon-tablet text-success"></i></button>
+		<button ng-if="bulkSelectedModules.unactivateTabletAll" ng-click="" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Inactivate all selected for Tablet"><i class="icon-tablet text-danger"></i></button>
+	</div>
+	
+	<div class="btn-group">
+		<button ng-if="bulkSelectedModules.activateDesktopAll" ng-click="" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Activate all selected for Desktop"><i class="icon-desktop text-success"></i></button>
+		<button ng-if="bulkSelectedModules.unactivateDesktopAll" ng-click="" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Inactivate all selected for Desktop"><i class="icon-desktop text-danger"></i></button>
+	</div>
+
+	<span ng-pluralize count="bulkSelectedModules.length" when="{ 0:'No module selected.', 1:'1 module is selected.', 'other':'{} modules on this page are selected.' }">
+	</span>
+</div>
