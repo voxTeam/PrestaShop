@@ -51,6 +51,82 @@ class AdminModulesControllerCore extends AdminController
 		$this->addJS(_PS_JS_DIR_.'bower_components/masonry/masonry.js');
 		$this->addJS(_PS_JS_DIR_.'bower_components/imagesloaded/imagesloaded.js');
 		$this->addJS(_PS_JS_DIR_.'bower_components/angular-masonry/angular-masonry.js');
-    	$this->addJS(_PS_JS_DIR_.'admin-module.js');
+		$this->addJS(_PS_JS_DIR_.'admin-module.js');
+	}
+
+	public function createStructure()
+	{
+		$data = array(
+			'selection' => array(
+				$this->l('Staff Picks') => array(
+					'priority' => 1,
+					'icon' => 'icon-thumb-tack',
+					'class' => 'staff-picks',
+					'filter' => 'module[\'Staff Picks\' == true]',
+					'limit' => 6
+				),
+				$this->l('Customer Experience') => array(
+					'priority' => 2,
+					'icon' => 'icon-user',
+					'class' => 'customer-experience',
+					'limit' => 6
+				),
+				$this->l('Site Management') => array(
+					'priority' => 3,
+					'icon' => 'icon-eye',
+					'class' => 'staff-management',
+					'limit' => 6
+				),
+				$this->l('Marketing') => array(
+					'priority' => 4,
+					'icon' => 'icon-tags',
+					'class' => 'marketing',
+					'limit' => 6
+				),
+				$this->l('Integrations') => array(
+					'priority' => 5,
+					'icon' => 'icon-puzzle-piece',
+					'class' => 'integrations',
+					'limit' => 6
+				)
+			),
+			'categories' => array(
+				$this->l('Customer Experience') => array(
+					$this->l('Checkout'),
+					$this->l('Social Networks'),
+					$this->l('Front office features'),
+					$this->l('International & Localization'),
+					$this->l('Merchandising'),
+					$this->l('Mobile'),
+					$this->l('Ordering Process'),
+					$this->l('Slideshows'),
+					$this->l('Site certification')
+				),
+				$this->l('Site Management') => array(
+					$this->l('Administration'),
+					$this->l('Taxes & Invoicing'),
+					$this->l('Content Management'),
+					$this->l('Dashboard'),
+					$this->l('Export'),
+					$this->l('Quick / Bulk update')
+				),
+				$this->l('Marketing') => array(
+					$this->l('Advertising & Marketing'),
+					$this->l('Analytics & Stats'),
+					$this->l('Emailling & SMS'),
+					$this->l('Marketplace'),
+					$this->l('Pricing & Promotion'),
+					$this->l('SEO')
+				),
+				$this->l('Integrations') => array(
+					$this->l('Migration tools & CMS'),
+					$this->l('Payments & Gateways'),
+					$this->l('Shipping & Logistic'),
+					$this->l('Comparators & Feed management')
+				)
+			)
+		);
+
+		return Tools::jsonEncode($data);
 	}
 }

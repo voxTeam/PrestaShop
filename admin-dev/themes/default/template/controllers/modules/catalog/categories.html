@@ -1,0 +1,31 @@
+<form class="form-inline modules-filters">
+	<div class="form-group">
+		<div class="btn-group">
+			<button type="button" ng-click="filterPrices('All')" ng-class="{'All': 'active'}[filters.byPrice]" class="btn btn-default">All</button>
+			<button type="button" ng-click="filterPrices('free')" ng-class="{'free': 'active'}[filters.byPrice]" class="btn btn-default">Free</button>
+			<button type="button" ng-click="filterPrices('paid')" ng-class="{'paid': 'active'}[filters.byPrice]" class="btn btn-default">Paid</button>
+		</div>
+	</div>
+	<div class="form-group" ng-include="'views/filters/sortBy.html'"></div>
+	<div class="form-group" ng-include="'views/filters/developedBy.html'"></div>
+</form>
+<div ng-if="filters.sortBy == 'Category'" ng-repeat="category in modulesToDisplay.categories | orderBy: categorySorter">
+	<div ng-class="category.data.style.class" class="panel">
+		<div class="panel-heading">
+			<i ng-class="category.data.style.icon"></i>
+			{{category.name}}
+		</div>
+		<div ng-repeat="subcategory in category.data.subcategories">
+			<span class="module-category-title" ng-class="category.data.style.class" >{{subcategory.name}} 
+				<span class="badge">{{subcategory.data.modules.length}}</span>
+			</span> 
+			<div masonry masonry-options="masonryOptions">
+				<div class="grid-sizer"></div>
+				<div class="masonry-brick" ng-include="getTemplate(category.name, i, module)" ng-repeat="(i, module) in subcategory.data.modules" ></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div ng-if="filters.sortBy == 'Abc'">
+	<div ng-include="'views/modules/module.html'" ng-repeat="module in modulesToDisplay.modules | orderBy:'title.text'"></div>
+</div>

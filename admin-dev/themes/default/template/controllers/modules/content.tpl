@@ -22,13 +22,10 @@
 *  @license    http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 *}
+<!--[if lt IE 9]>
+<script src="bower_components/es5-shim/es5-shim.js"></script>
+<script src="bower_components/json3/lib/json3.min.js"></script>
+<![endif]-->
 <div ng-app="modulesApp" class="ps_back-office page-sidebar adminmodules" ng-controller="MainCtrl">
-	<div ng-include="'themes/{$current_admin_theme}/template/controllers/modules/views/admin-modules-content.html'"></div>
-	<div ng-include="'themes/{$current_admin_theme}/template/controllers/modules/views/modal-module-details.html'"></div>
-
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
-
+	<div>{include file='controllers/modules/admin-modules-content.tpl'}</div>
 </div>
