@@ -33,7 +33,6 @@ class AdminModulesControllerCore extends AdminController
 	{
 		$this->bootstrap = true;
 		parent::__construct();
-		$this->ajaxProcessGetStructure();
 	}
 
 	public function setMedia()
