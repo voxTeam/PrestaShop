@@ -402,7 +402,6 @@ angular.module('modulesApp')
 angular.module('modulesApp')
   // main controller for the Catalog view
   .controller('CatalogCtrl', function ($scope, $http, $q, focusedModule) {
-    console.log('okkkkk');
     $scope.catalogCategories = [
       {'name': 'Our Selections', 'tpl': 'themes/'+current_admin_theme+'/template/controllers/modules/views/catalog/selections.html', 'priority': 1, 'icon': 'icon-bookmark'},
       {'name': 'Official Partners', 'tpl': 'themes/'+current_admin_theme+'/template/controllers/modules/views/catalog/partners.html', 'priority': 2, 'icon': 'icon-certificate'},

@@ -23,8 +23,8 @@
 *  International Registered Trademark & Property of PrestaShop SA
 *}
 <div ng-app="modulesApp" class="ps_back-office page-sidebar adminmodules" ng-controller="MainCtrl">
-	<div ng-include="views/ps-admin-frame.html"></div>
-	<div ng-include="views/modal-module-details.html"></div>
+	<div ng-include="'themes/{$current_admin_theme}/template/controllers/modules/views/admin-modules-content.html'"></div>
+	<div ng-include="'themes/{$current_admin_theme}/template/controllers/modules/views/modal-module-details.html'"></div>
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
