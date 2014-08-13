@@ -1,7 +1,7 @@
 <form class="form-inline modules-filters">
-  <div class="form-group" ng-include="../filters/pricing.html"></div>
-  <div class="form-group" ng-include="../filters/sortBy.html"></div>
-  <div class="form-group" ng-include="../views/filters/developedBy.html"></div>
+  <div class="form-group" ng-include="views/filters/pricing.html"></div>
+  <div class="form-group" ng-include="views/filters/sortBy.html"></div>
+  <div class="form-group" ng-include="views/filters/developedBy.html"></div>
 </form>
 
 <div ng-if="filters.sortBy == 'Category'" ng-repeat="category in modulesToDisplay.categories | orderBy: categorySorter">
