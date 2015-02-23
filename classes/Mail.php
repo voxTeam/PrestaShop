@@ -63,8 +63,13 @@ class MailCore extends ObjectModel
 		),
 	);
 
+	/** @var int HTML mail type. (Bitwise) */
 	const TYPE_HTML = 1;
+
+	/** @var int TEXT mail type. (Bitwise) */
 	const TYPE_TEXT = 2;
+
+	/** @var int HTML | TEXT mail type. (Bitwise) */
 	const TYPE_BOTH = 3;
 
 	/**
@@ -79,15 +84,32 @@ class MailCore extends ObjectModel
 	 * @param string $from
 	 * @param string $from_name
 	 * @param array $file_attachment Array with three parameters (content, mime and name). You can use an array of array to attach multiple files
-	 * @param bool $modeSMTP
+	 * @param bool $mode_smtp
 	 * @param string $template_path
 	 * @param bool $die
-     * @param string $bcc Bcc recipient
+	 * @param null $id_shop
+	 * @param string $bcc Bcc recipient
+	 * @param null $reply_to
+	 * @return bool Sending success
+	 * @throws Exception
 	 */
-	public static function Send($id_lang, $template, $subject, $template_vars, $to,
-		$to_name = null, $from = null, $from_name = null, $file_attachment = null, $mode_smtp = null,
-		$template_path = _PS_MAIL_DIR_, $die = false, $id_shop = null, $bcc = null, $reply_to = null)
-	{
+	public static function Send(
+		$id_lang,
+		$template,
+		$subject,
+		$template_vars,
+		$to,
+		$to_name = null,
+		$from = null,
+		$from_name = null,
+		$file_attachment = null,
+		$mode_smtp = null,
+		$template_path = _PS_MAIL_DIR_,
+		$die = false,
+		$id_shop = null,
+		$bcc = null,
+		$reply_to = null
+	) {
 		if (!$id_shop)
 			$id_shop = Context::getContext()->shop->id;
 
@@ -103,7 +125,7 @@ class MailCore extends ObjectModel
 			'PS_MAIL_TYPE'
 		), null, null, $id_shop);
 
-		// Returns immediatly if emails are deactivated
+		// Returns immediately if emails are deactivated
 		if ($configuration['PS_MAIL_METHOD'] == 3)
 			return true;
 
@@ -124,7 +146,10 @@ class MailCore extends ObjectModel
 		if (!isset($configuration['PS_MAIL_SMTP_PORT']))
 			$configuration['PS_MAIL_SMTP_PORT'] = 'default';
 
-		// Sending an e-mail can be of vital importance for the merchant, when his password is lost for example, so we must not die but do our best to send the e-mail
+		//<editor-fold desc="Values validation">
+
+		//  Sending an e-mail can be of vital importance for the merchant, when his password is lost for example, so we must not die but do our best
+		// to send the e-mail.
 
 		if (!isset($from) || !Validate::isEmail($from))
 			$from = $configuration['PS_SHOP_EMAIL'];
@@ -145,7 +170,7 @@ class MailCore extends ObjectModel
 			return false;
 		}
 
-		// if bcc is not null, make sure it's a vaild e-mail
+		// If bcc is not null, make sure it's a valid e-mail
 		if (!is_null($bcc) && !is_array($bcc) && !Validate::isEmail($bcc))
 		{
 			Tools::dieOrLog(Tools::displayError('Error: parameter "bcc" is corrupted'), $die);
@@ -171,10 +196,18 @@ class MailCore extends ObjectModel
 			return false;
 		}
 
-		/* Construct multiple recipients list if needed */
+		//</editor-fold>
+		//<editor-fold desc="Recipients">
+
+		//
+		// Recipients list construction.
+		//
+
 		$to_list = new Swift_RecipientList();
-		if (is_array($to) && isset($to))
+		if (is_array($to))
 		{
+			// Multiples recipients.
+
 			foreach ($to as $key => $addr)
 			{
 				$addr = trim($addr);
@@ -194,16 +227,25 @@ class MailCore extends ObjectModel
 		}
 		else
 		{
-			/* Simple recipient, one address */
+			// Single recipient
 			$to_plugin = $to;
 			$to_name = (($to_name == null || $to_name == $to) ? '' : self::mimeEncode($to_name));
 			$to_list->addTo($to, $to_name);
 		}
+
 		if (isset($bcc))
 			$to_list->addBcc($bcc);
 
-		try {
-			/* Connect with the appropriate configuration */
+		//</editor-fold>
+
+		try
+		{
+			//<editor-fold desc="Connexion">
+
+			//
+			// Connexion with the appropriate configuration
+			//
+
 			if ($configuration['PS_MAIL_METHOD'] == 2)
 			{
 				if (empty($configuration['PS_MAIL_SERVER']) || empty($configuration['PS_MAIL_SMTP_PORT']))
@@ -211,16 +253,22 @@ class MailCore extends ObjectModel
 					Tools::dieOrLog(Tools::displayError('Error: invalid SMTP server or SMTP port'), $die);
 					return false;
 				}
+
 				$connection = new Swift_Connection_SMTP(
 					$configuration['PS_MAIL_SERVER'],
 					$configuration['PS_MAIL_SMTP_PORT'],
-					$configuration['PS_MAIL_SMTP_ENCRYPTION'] == 'ssl' ? Swift_Connection_SMTP::ENC_SSL : (($configuration['PS_MAIL_SMTP_ENCRYPTION'] == 'tls' ? Swift_Connection_SMTP::ENC_TLS : Swift_Connection_SMTP::ENC_OFF))
+					$configuration['PS_MAIL_SMTP_ENCRYPTION'] == 'ssl' ? Swift_Connection_SMTP::ENC_SSL : (
+						$configuration['PS_MAIL_SMTP_ENCRYPTION'] == 'tls' ? Swift_Connection_SMTP::ENC_TLS : Swift_Connection_SMTP::ENC_OFF
+					)
 				);
 				$connection->setTimeout(4);
+
 				if (!$connection)
 					return false;
+
 				if (!empty($configuration['PS_MAIL_USER']))
 					$connection->setUsername($configuration['PS_MAIL_USER']);
+
 				if (!empty($configuration['PS_MAIL_PASSWD']))
 					$connection->setPassword($configuration['PS_MAIL_PASSWD']);
 			}
@@ -229,8 +277,15 @@ class MailCore extends ObjectModel
 
 			if (!$connection)
 				return false;
+
 			$swift = new Swift($connection, Configuration::get('PS_MAIL_DOMAIN', null, null, $id_shop));
-			/* Get templates content */
+
+			//</editor-fold>
+
+			//
+			// Template by ISO
+			//
+
 			$iso = Language::getIsoById((int)$id_lang);
 			if (!$iso)
 			{
@@ -239,11 +294,21 @@ class MailCore extends ObjectModel
 			}
 			$iso_template = $iso.'/'.$template;
 
+
+			//
+			// Template path
+			//
+
 			$module_name = false;
 			$override_mail = false;
 
-			// get templatePath
-			if (preg_match('#'.$shop->physical_uri.'modules/#', str_replace(DIRECTORY_SEPARATOR, '/', $template_path)) && preg_match('#modules/([a-z0-9_-]+)/#ui', str_replace(DIRECTORY_SEPARATOR, '/',$template_path), $res))
+			if (preg_match(
+					'#'.$shop->physical_uri.'modules/#',
+					str_replace(DIRECTORY_SEPARATOR, '/', $template_path)
+				) && preg_match(
+					'#modules/([a-z0-9_-]+)/#ui',
+					str_replace(DIRECTORY_SEPARATOR, '/',$template_path), $res)
+			)
 				$module_name = $res[1];
 
 			if ($module_name !== false && (file_exists($theme_path.'modules/'.$module_name.'/mails/'.$iso_template.'.txt') ||
@@ -254,21 +319,20 @@ class MailCore extends ObjectModel
 				$template_path = $theme_path.'mails/';
 				$override_mail  = true;
 			}
-			if (!file_exists($template_path.$iso_template.'.txt') && ($configuration['PS_MAIL_TYPE'] == Mail::TYPE_BOTH || $configuration['PS_MAIL_TYPE'] == Mail::TYPE_TEXT))
+
+			if (($configuration['PS_MAIL_TYPE'] & Mail::TYPE_TEXT) == Mail::TYPE_TEXT && !Tools::file_exists_cache($template_path.$iso_template.'.txt'))
 			{
 				Tools::dieOrLog(Tools::displayError('Error - The following e-mail template is missing:').' '.$template_path.$iso_template.'.txt', $die);
 				return false;
 			}
-			elseif (!file_exists($template_path.$iso_template.'.html') && ($configuration['PS_MAIL_TYPE'] == Mail::TYPE_BOTH || $configuration['PS_MAIL_TYPE'] == Mail::TYPE_HTML))
+			elseif (($configuration['PS_MAIL_TYPE'] & Mail::TYPE_HTML) == Mail::TYPE_HTML && !Tools::file_exists_cache($template_path.$iso_template.'.html'))
 			{
 				Tools::dieOrLog(Tools::displayError('Error - The following e-mail template is missing:').' '.$template_path.$iso_template.'.html', $die);
 				return false;
 			}
-			$template_html = file_get_contents($template_path.$iso_template.'.html');
-			$template_txt = strip_tags(html_entity_decode(file_get_contents($template_path.$iso_template.'.txt'), null, 'utf-8'));
 
 			if ($override_mail && file_exists($template_path.$iso.'/lang.php'))
-					include_once($template_path.$iso.'/lang.php');
+				include_once($template_path.$iso.'/lang.php');
 			elseif ($module_name && file_exists($theme_path.'mails/'.$iso.'/lang.php'))
 				include_once($theme_path.'mails/'.$iso.'/lang.php');
 			elseif (file_exists(_PS_MAIL_DIR_.$iso.'/lang.php'))
@@ -306,27 +370,44 @@ class MailCore extends ObjectModel
 				if (file_exists(_PS_IMG_DIR_.Configuration::get('PS_LOGO', null, null, $id_shop)))
 					$logo = _PS_IMG_DIR_.Configuration::get('PS_LOGO', null, null, $id_shop);
 				else
-					$template_vars['{shop_logo}'] = '';
+					$template_vars['shop_logo'] = '';
 			}
 			ShopUrl::cacheMainDomainForShop((int)$id_shop);
-			/* don't attach the logo as */
+
+			// Logo attachment
 			if (isset($logo))
-				$template_vars['{shop_logo}'] = $message->attach(new Swift_Message_EmbeddedFile(new Swift_File($logo), null, ImageManager::getMimeTypeByExtension($logo)));
+				$template_vars['shop_logo'] = $message->attach(new Swift_Message_EmbeddedFile(new Swift_File($logo), null, ImageManager::getMimeTypeByExtension($logo)));
 
 			if ((Context::getContext()->link instanceof Link) === false)
 				Context::getContext()->link = new Link();
 
-			$template_vars['{shop_name}'] = Tools::safeOutput(Configuration::get('PS_SHOP_NAME', null, null, $id_shop));
-			$template_vars['{shop_url}'] = Context::getContext()->link->getPageLink('index', true, Context::getContext()->language->id, null, false, $id_shop);
-			$template_vars['{my_account_url}'] = Context::getContext()->link->getPageLink('my-account', true, Context::getContext()->language->id, null, false, $id_shop);
-			$template_vars['{guest_tracking_url}'] = Context::getContext()->link->getPageLink('guest-tracking', true, Context::getContext()->language->id, null, false, $id_shop);
-			$template_vars['{history_url}'] = Context::getContext()->link->getPageLink('history', true, Context::getContext()->language->id, null, false, $id_shop);
-			$template_vars['{color}'] = Tools::safeOutput(Configuration::get('PS_MAIL_COLOR', null, null, $id_shop));
-			$swift->attachPlugin(new Swift_Plugin_Decorator(array($to_plugin => $template_vars)), 'decorator');
-			if ($configuration['PS_MAIL_TYPE'] == Mail::TYPE_BOTH || $configuration['PS_MAIL_TYPE'] == Mail::TYPE_TEXT)
+			// Default template variables
+			$template_vars = array_merge($template_vars, array(
+				'shop_name' => Tools::safeOutput(Configuration::get('PS_SHOP_NAME', null, null, $id_shop)),
+				'shop_url' => Context::getContext()->link->getPageLink('index', true, Context::getContext()->language->id, null, false, $id_shop),
+				'my_account_url' => Context::getContext()->link->getPageLink('my-account', true, Context::getContext()->language->id, null, false, $id_shop),
+				'guest_tracking_url' => Context::getContext()->link->getPageLink('guest-tracking', true, Context::getContext()->language->id, null, false, $id_shop),
+				'history_url' => Context::getContext()->link->getPageLink('history', true, Context::getContext()->language->id, null, false, $id_shop),
+				'color' => Tools::safeOutput(Configuration::get('PS_MAIL_COLOR', null, null, $id_shop)),
+			));
+
+			$smarty = Context::getContext()->smarty;
+			$smarty->assign($template_vars);
+
+			// Smarty execution to get the wanted fulfilled templates
+
+			$template_html = file_get_contents($template_path.$iso_template.'.html');
+			$template_txt = strip_tags(html_entity_decode(file_get_contents($template_path.$iso_template.'.txt'), null, 'utf-8'));
+
+
+			if (($configuration['PS_MAIL_TYPE'] & Mail::TYPE_TEXT) == Mail::TYPE_TEXT)
 				$message->attach(new Swift_Message_Part($template_txt, 'text/plain', '8bit', 'utf-8'));
-			if ($configuration['PS_MAIL_TYPE'] == Mail::TYPE_BOTH || $configuration['PS_MAIL_TYPE'] == Mail::TYPE_HTML)
+
+			if (($configuration['PS_MAIL_TYPE'] & Mail::TYPE_HTML) == Mail::TYPE_HTML)
 				$message->attach(new Swift_Message_Part($template_html, 'text/html', '8bit', 'utf-8'));
+
+			//<editor-fold desc="Attachments">
+
 			if ($file_attachment && !empty($file_attachment))
 			{
 				// Multiple attachments?
@@ -337,11 +418,20 @@ class MailCore extends ObjectModel
 					if (isset($attachment['content']) && isset($attachment['name']) && isset($attachment['mime']))
 						$message->attach(new Swift_Message_Attachment($attachment['content'], $attachment['name'], $attachment['mime']));
 			}
+
 			/* Send mail */
 			$send = $swift->send($message, $to_list, new Swift_Address($from, $from_name));
 			$swift->disconnect();
 
+			//</editor-fold>
+
 			ShopUrl::resetMainDomainCache();
+
+			//<editor-fold desc="Logs">
+
+			//
+			// Log mail
+			//
 
 			if ($send && Configuration::get('PS_LOG_EMAILS'))
 			{
@@ -356,6 +446,8 @@ class MailCore extends ObjectModel
 					$mail->add();
 				}
 			}
+
+			//</editor-fold>
 
 			return $send;
 		}
@@ -436,10 +528,10 @@ class MailCore extends ObjectModel
 	protected static function generateId($idstring = null)
 	{
 		$midparams =  array(
-			"utctime" => gmstrftime("%Y%m%d%H%M%S"),
-			"randint" => mt_rand(),
-			"customstr" => (preg_match("/^(?<!\\.)[a-z0-9\\.]+(?!\\.)\$/iD", $idstring) ? $idstring : "swift") ,
-			"hostname" => (isset($_SERVER["SERVER_NAME"]) ? $_SERVER["SERVER_NAME"] : php_uname("n")),
+			'utctime' => gmstrftime("%Y%m%d%H%M%S"),
+			'randint' => mt_rand(),
+			'customstr' => (preg_match("/^(?<!\\.)[a-z0-9\\.]+(?!\\.)\$/iD", $idstring) ? $idstring : "swift") ,
+			'hostname' => (isset($_SERVER["SERVER_NAME"]) ? $_SERVER["SERVER_NAME"] : php_uname("n")),
 		);
 		return vsprintf("<%s.%d.%s@%s>", $midparams);
 	}
