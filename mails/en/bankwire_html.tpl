@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-		<title>Message from {shop_name}</title>
+		<title>Message from {$shop_name}</title>
 		
 		
 		<style>	@media only screen and (max-width: 300px){ 
@@ -61,8 +61,8 @@
 					<table class="table" bgcolor="#ffffff" style="width:100%">
 						<tr>
 							<td align="center" class="logo" style="border-bottom:4px solid #333333;padding:7px 0">
-								<a title="{shop_name}" href="{shop_url}" style="color:#337ff1">
-									<img src="{shop_logo}" alt="{shop_name}" />
+								<a title="{$shop_name}" href="{$shop_url}" style="color:#337ff1">
+									<img src="{$shop_logo}" alt="{$shop_name}" />
 								</a>
 							</td>
 						</tr>
@@ -70,8 +70,8 @@
 <tr>
 	<td align="center" class="titleblock" style="padding:7px 0">
 		<font size="2" face="Open-sans, sans-serif" color="#555454">
-			<span class="title" style="font-weight:500;font-size:28px;text-transform:uppercase;line-height:33px">Hi {firstname} {lastname},</span><br/>
-			<span class="subtitle" style="font-weight:500;font-size:16px;text-transform:uppercase;line-height:25px">Thank you for shopping with {shop_name}!</span>
+			<span class="title" style="font-weight:500;font-size:28px;text-transform:uppercase;line-height:33px">Hi {$firstname} {$lastname},</span><br/>
+			<span class="subtitle" style="font-weight:500;font-size:16px;text-transform:uppercase;line-height:25px">Thank you for shopping with {$shop_name}!</span>
 		</font>
 	</td>
 </tr>
@@ -86,10 +86,10 @@
 				<td style="padding:7px 0">
 					<font size="2" face="Open-sans, sans-serif" color="#555454">
 						<p data-html-only="1" style="border-bottom:1px solid #D6D4D4;margin:3px 0 7px;text-transform:uppercase;font-weight:500;font-size:18px;padding-bottom:10px">
-							Order {order_name}&nbsp;-&nbsp;Awaiting wire payment 
+							Order {$order_name}&nbsp;-&nbsp;Awaiting wire payment
 						</p>
 						<span style="color:#777">
-							Your order with the reference <span style="color:#333"><strong>{order_name}</strong></span> has been placed successfully and will be <strong>shipped as soon as we receive your payment</strong>.						</span>
+							Your order with the reference <span style="color:#333"><strong>{$order_name}</strong></span> has been placed successfully and will be <strong>shipped as soon as we receive your payment</strong>.						</span>
 					</font>
 				</td>
 				<td width="10" style="padding:7px 0">&nbsp;</td>
@@ -111,10 +111,10 @@
 							You have selected to pay by wire transfer.						</p>
 						<span style="color:#777">
 							Here are the bank details for your transfer:<br /> 
-							<span style="color:#333"><strong>Amount:</strong></span> {total_paid}<br />
-							<span style="color:#333"><strong>Account owner:</strong></span> {bankwire_owner}<br />
-							<span style="color:#333"><strong>Account details:</strong></span> {bankwire_details}<br />
-							<span style="color:#333"><strong>Bank address:</strong></span> {bankwire_address}
+							<span style="color:#333"><strong>Amount:</strong></span> {$total_paid}<br />
+							<span style="color:#333"><strong>Account owner:</strong></span> {$bankwire_owner}<br />
+							<span style="color:#333"><strong>Account details:</strong></span> {$bankwire_details}<br />
+							<span style="color:#333"><strong>Bank address:</strong></span> {$bankwire_address}
 						</span>
 					</font>
 				</td>
@@ -130,7 +130,7 @@
 	<td class="linkbelow" style="padding:7px 0">
 		<font size="2" face="Open-sans, sans-serif" color="#555454">
 			<span>
-				You can review your order and download your invoice from the <a href="{history_url}" style="color:#337ff1">"Order history"</a> section of your customer account by clicking <a href="{my_account_url}" style="color:#337ff1">"My account"</a> on our shop.			</span>
+				You can review your order and download your invoice from the <a href="{$history_url}" style="color:#337ff1">"Order history"</a> section of your customer account by clicking <a href="{$my_account_url}" style="color:#337ff1">"My account"</a> on our shop.			</span>
 		</font>
 	</td>
 </tr>
@@ -138,7 +138,7 @@
 	<td class="linkbelow" style="padding:7px 0">
 		<font size="2" face="Open-sans, sans-serif" color="#555454">
 			<span>
-				If you have a guest account, you can follow your order via the <a href="{guest_tracking_url}" style="color:#337ff1">"Guest Tracking"</a> section on our shop.			</span>
+				If you have a guest account, you can follow your order via the <a href="{$guest_tracking_url}" style="color:#337ff1">"Guest Tracking"</a> section on our shop.			</span>
 		</font>
 	</td>
 </tr>
@@ -148,7 +148,7 @@
 						</tr>
 						<tr>
 							<td class="footer" style="border-top:4px solid #333333;padding:7px 0">
-								<span><a href="{shop_url}" style="color:#337ff1">{shop_name}</a> powered by <a href="http://www.prestashop.com/" style="color:#337ff1">PrestaShop&trade;</a></span>
+								<span><a href="{$shop_url}" style="color:#337ff1">{$shop_name}</a> powered by <a href="http://www.prestashop.com/" style="color:#337ff1">PrestaShop&trade;</a></span>
 							</td>
 						</tr>
 					</table>

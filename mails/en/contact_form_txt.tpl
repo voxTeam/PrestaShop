@@ -1,20 +1,20 @@
 
-[{shop_url}] 
+[{$shop_url}]
 
-Your message to {shop_name} Customer Service 
+Your message to {$shop_name} Customer Service
 
 Your message has been sent successfully.
 
-MESSAGE: {message}
+MESSAGE: {$message}
 
-ORDER ID: {order_name}
+ORDER ID: {$order_name}
 
-PRODUCT: {product_name}
+PRODUCT: {$product_name}
 
-ATTACHED FILE: {attached_file} 		 
+ATTACHED FILE: {$attached_file}
 
 We will answer as soon as possible. 
 
-{shop_name} [{shop_url}] powered by
+{$shop_name} [{$shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 
 

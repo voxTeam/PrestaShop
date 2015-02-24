@@ -1,18 +1,18 @@
 
-[{shop_url}] 
+[{$shop_url}]
 
-Hi {firstname} {lastname}, 
+Hi {$firstname} {$lastname},
 
-Here is your personal login information for {shop_name}:
+Here is your personal login information for {$shop_name}:
 
-FIRST NAME: {firstname}
+FIRST NAME: {$firstname}
 
-LAST NAME: {lastname}
+LAST NAME: {$lastname}
 
-PASSWORD: {passwd}
+PASSWORD: {$passwd}
 
-E-MAIL ADDRESS: {email} 		 
+E-MAIL ADDRESS: {$email}
 
-{shop_name} [{shop_url}] powered by
+{$shop_name} [{$shop_url}] powered by
 PrestaShop(tm) [http://www.prestashop.com/] 
 

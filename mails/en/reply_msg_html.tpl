@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-		<title>Message from {shop_name}</title>
+		<title>Message from {$shop_name}</title>
 		
 		
 		<style>	@media only screen and (max-width: 300px){ 
@@ -61,15 +61,15 @@
 					<table class="table" bgcolor="#ffffff" style="width:100%">
 						<tr>
 							<td align="center" class="logo" style="border-bottom:4px solid #333333;padding:7px 0">
-								<a title="{shop_name}" href="{shop_url}" style="color:#337ff1">
-									<img src="{shop_logo}" alt="{shop_name}" />
+								<a title="{$shop_name}" href="{$shop_url}" style="color:#337ff1">
+									<img src="{$shop_logo}" alt="{$shop_name}" />
 								</a>
 							</td>
 						</tr>
 
 <tr>
 	<td align="center" class="titleblock" style="padding:7px 0">
-		<span class="title" style="font-weight:500;font-size:28px;text-transform:uppercase;line-height:33px">Hi {firstname} {lastname},</span>
+		<span class="title" style="font-weight:500;font-size:28px;text-transform:uppercase;line-height:33px">Hi {$firstname} {$lastname},</span>
 	</td>
 </tr>
 <tr>
@@ -77,7 +77,7 @@
 </tr>
 <tr>
 	<td class="linkbelow" style="padding:7px 0">
-		<span>{reply}</span>
+		<span>{$reply}</span>
 	</td>
 </tr>
 <tr>
@@ -87,7 +87,7 @@
 	<td class="linkbelow" style="padding:7px 0">
 		<span>
 			Please do not reply directly to this email, we will not receive it.			<br>
-			In order to reply, please use the following link: <a href="{link}" style="color:#337ff1">{link}</a>		</span>
+			In order to reply, please use the following link: <a href="{$link}" style="color:#337ff1">{$link}</a>		</span>
 	</td>
 </tr>
 
@@ -96,7 +96,7 @@
 						</tr>
 						<tr>
 							<td class="footer" style="border-top:4px solid #333333;padding:7px 0">
-								<span><a href="{shop_url}" style="color:#337ff1">{shop_name}</a> powered by <a href="http://www.prestashop.com/" style="color:#337ff1">PrestaShop&trade;</a></span>
+								<span><a href="{$shop_url}" style="color:#337ff1">{$shop_name}</a> powered by <a href="http://www.prestashop.com/" style="color:#337ff1">PrestaShop&trade;</a></span>
 							</td>
 						</tr>
 					</table>
