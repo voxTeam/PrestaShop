@@ -248,10 +248,10 @@ class AdminLoginControllerCore extends AdminController
 			$employee->last_passwd_gen = date('Y-m-d H:i:s', time());
 
 			$params = array(
-				'{email}' => $employee->email,
-				'{lastname}' => $employee->lastname,
-				'{firstname}' => $employee->firstname,
-				'{passwd}' => $pwd
+				'email' => $employee->email,
+				'lastname' => $employee->lastname,
+				'firstname' => $employee->firstname,
+				'passwd' => $pwd
 			);
 						
 			if (Mail::Send($employee->id_lang, 'employee_password', Mail::l('Your new password', $employee->id_lang), $params, $employee->email, $employee->firstname.' '.$employee->lastname))

@@ -52,10 +52,10 @@ class PasswordControllerCore extends FrontController
 				else
 				{
 					$mail_params = array(
-						'{email}' => $customer->email,
-						'{lastname}' => $customer->lastname,
-						'{firstname}' => $customer->firstname,
-						'{url}' => $this->context->link->getPageLink('password', true, null, 'token='.$customer->secure_key.'&id_customer='.(int)$customer->id)
+						'email' => $customer->email,
+						'lastname' => $customer->lastname,
+						'firstname' => $customer->firstname,
+						'url' => $this->context->link->getPageLink('password', true, null, 'token='.$customer->secure_key.'&id_customer='.(int)$customer->id)
 					);
 					if (Mail::Send($this->context->language->id, 'password_query', Mail::l('Password query confirmation'), $mail_params, $customer->email, $customer->firstname.' '.$customer->lastname))
 						$this->context->smarty->assign(array('confirmation' => 2, 'customer_email' => $customer->email));
@@ -85,10 +85,10 @@ class PasswordControllerCore extends FrontController
 					{
 						Hook::exec('actionPasswordRenew', array('customer' => $customer, 'password' => $password));
 						$mail_params = array(
-							'{email}' => $customer->email,
-							'{lastname}' => $customer->lastname,
-							'{firstname}' => $customer->firstname,
-							'{passwd}' => $password
+							'email' => $customer->email,
+							'lastname' => $customer->lastname,
+							'firstname' => $customer->firstname,
+							'passwd' => $password
 						);
 						if (Mail::Send($this->context->language->id, 'password', Mail::l('Your new password'), $mail_params, $customer->email, $customer->firstname.' '.$customer->lastname))
 							$this->context->smarty->assign(array('confirmation' => 1, 'customer_email' => $customer->email));

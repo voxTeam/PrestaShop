@@ -630,10 +630,10 @@ class AdminEmployeesControllerCore extends AdminController
 			if (Tools::getValue('passwd_send_email'))
 			{
 				$params = array(
-					'{email}' => $object->email,
-					'{lastname}' => $object->lastname,
-					'{firstname}' => $object->firstname,
-					'{passwd}' => $passwd
+					'email' => $object->email,
+					'lastname' => $object->lastname,
+					'firstname' => $object->firstname,
+					'passwd' => $passwd
 				);
 				Mail::Send($object->id_lang, 'password', Mail::l('Your new password', $object->id_lang), $params, $object->email, $object->firstname.' '.$object->lastname);
 			}

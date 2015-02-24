@@ -328,11 +328,11 @@ class AdminCustomerThreadsControllerCore extends AdminController
 				elseif ($id_employee && $employee && Validate::isLoadedObject($employee))
 				{
 					$params = array(
-						'{messages}' => stripslashes($output),
-						'{employee}' => $current_employee->firstname.' '.$current_employee->lastname,
-						'{comment}' => stripslashes(Tools::nl2br($_POST['message_forward'])),
-						'{firstname}' => $employee->firstname,
-						'{lastname}' => $employee->lastname,
+						'messages' => stripslashes($output),
+						'employee' => $current_employee->firstname.' '.$current_employee->lastname,
+						'comment' => stripslashes(Tools::nl2br($_POST['message_forward'])),
+						'firstname' => $employee->firstname,
+						'lastname' => $employee->lastname,
 					);
 
 					if (Mail::Send(
@@ -354,9 +354,9 @@ class AdminCustomerThreadsControllerCore extends AdminController
 				elseif ($email && Validate::isEmail($email))
 				{
 					$params = array(
-						'{messages}' => Tools::nl2br(stripslashes($output)),
-						'{employee}' => $current_employee->firstname.' '.$current_employee->lastname,
-						'{comment}' => stripslashes($_POST['message_forward'])
+						'messages' => Tools::nl2br(stripslashes($output)),
+						'employee' => $current_employee->firstname.' '.$current_employee->lastname,
+						'comment' => stripslashes($_POST['message_forward'])
 					);
 
 					if (Mail::Send(
@@ -400,13 +400,13 @@ class AdminCustomerThreadsControllerCore extends AdminController
 					}
 					$customer = new Customer($ct->id_customer);
 					$params = array(
-						'{reply}' => Tools::nl2br(Tools::getValue('reply_message')),
-						'{link}' => Tools::url(
+						'reply' => Tools::nl2br(Tools::getValue('reply_message')),
+						'link' => Tools::url(
 							$this->context->link->getPageLink('contact', true),
 							'id_customer_thread='.(int)$ct->id.'&token='.$ct->token
 						),
-						'{firstname}' => $customer->firstname,
-						'{lastname}' => $customer->lastname
+						'firstname' => $customer->firstname,
+						'lastname' => $customer->lastname
 					);
 					//#ct == id_customer_thread    #tc == token of thread   <== used in the synchronization imap
 					$contact = new Contact((int)$ct->id_contact, (int)$ct->id_lang);

@@ -160,30 +160,30 @@ class ContactControllerCore extends FrontController
 				if (!count($this->errors))
 				{
 					$var_list = array(
-									'{order_name}' => '-',
-									'{attached_file}' => '-',
-									'{message}' => Tools::nl2br(stripslashes($message)),
-									'{email}' =>  $from,
-									'{product_name}' => '',
+									'order_name' => '-',
+									'attached_file' => '-',
+									'message' => Tools::nl2br(stripslashes($message)),
+									'email' =>  $from,
+									'product_name' => '',
 								);
 
 					if (isset($file_attachment['name']))
-						$var_list['{attached_file}'] = $file_attachment['name'];
+						$var_list['attached_file'] = $file_attachment['name'];
 
 					$id_product = (int)Tools::getValue('id_product');
 
 					if (isset($ct) && Validate::isLoadedObject($ct) && $ct->id_order)
 					{
 						$order = new Order((int)$ct->id_order);
-						$var_list['{order_name}'] = $order->getUniqReference();
-						$var_list['{id_order}'] = (int)$order->id;
+						$var_list['order_name'] = $order->getUniqReference();
+						$var_list['id_order'] = (int)$order->id;
 					}
 
 					if ($id_product)
 					{
 						$product = new Product((int)$id_product);
 						if (Validate::isLoadedObject($product) && isset($product->name[Context::getContext()->language->id]))
-							$var_list['{product_name}'] = $product->name[Context::getContext()->language->id];
+							$var_list['product_name'] = $product->name[Context::getContext()->language->id];
 					}
 
 					if (empty($contact->email))

@@ -311,10 +311,10 @@ class MailCore extends ObjectModel
 			)
 				$module_name = $res[1];
 
-			if ($module_name !== false && (file_exists($theme_path.'modules/'.$module_name.'/mails/'.$iso_template.'.txt') ||
-				file_exists($theme_path.'modules/'.$module_name.'/mails/'.$iso_template.'.html')))
+			if ($module_name !== false && (Tools::file_exists($theme_path.'modules/'.$module_name.'/mails/'.$iso_template.'.txt') ||
+					Tools::file_exists_cache($theme_path.'modules/'.$module_name.'/mails/'.$iso_template.'.html')))
 				$template_path = $theme_path.'modules/'.$module_name.'/mails/';
-			elseif (file_exists($theme_path.'mails/'.$iso_template.'.txt') || file_exists($theme_path.'mails/'.$iso_template.'.html'))
+			elseif (Tools::file_exists_cache($theme_path.'mails/'.$iso_template.'.txt') || Tools::file_exists_cache($theme_path.'mails/'.$iso_template.'.html'))
 			{
 				$template_path = $theme_path.'mails/';
 				$override_mail  = true;
@@ -331,11 +331,11 @@ class MailCore extends ObjectModel
 				return false;
 			}
 
-			if ($override_mail && file_exists($template_path.$iso.'/lang.php'))
+			if ($override_mail && Tools::file_exists_cache($template_path.$iso.'/lang.php'))
 				include_once($template_path.$iso.'/lang.php');
-			elseif ($module_name && file_exists($theme_path.'mails/'.$iso.'/lang.php'))
+			elseif ($module_name && Tools::file_exists_cache($theme_path.'mails/'.$iso.'/lang.php'))
 				include_once($theme_path.'mails/'.$iso.'/lang.php');
-			elseif (file_exists(_PS_MAIL_DIR_.$iso.'/lang.php'))
+			elseif (Tools::file_exists_cache(_PS_MAIL_DIR_.$iso.'/lang.php'))
 				include_once(_PS_MAIL_DIR_.$iso.'/lang.php');
 			else
 			{
@@ -391,14 +391,11 @@ class MailCore extends ObjectModel
 				'color' => Tools::safeOutput(Configuration::get('PS_MAIL_COLOR', null, null, $id_shop)),
 			));
 
+			// Smarty execution to get the wanted fulfilled templates
 			$smarty = Context::getContext()->smarty;
 			$smarty->assign($template_vars);
-
-			// Smarty execution to get the wanted fulfilled templates
-
-			$template_html = file_get_contents($template_path.$iso_template.'.html');
-			$template_txt = strip_tags(html_entity_decode(file_get_contents($template_path.$iso_template.'.txt'), null, 'utf-8'));
-
+			$template_html = $smarty->fetch($template_path.$iso_template.'_html.tpl');
+			$template_txt = strip_tags(html_entity_decode($smarty->fetch($template_path.$iso_template.'_txt.tpl'), null, 'utf-8'));
 
 			if (($configuration['PS_MAIL_TYPE'] & Mail::TYPE_TEXT) == Mail::TYPE_TEXT)
 				$message->attach(new Swift_Message_Part($template_txt, 'text/plain', '8bit', 'utf-8'));

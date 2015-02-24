@@ -470,12 +470,12 @@ class AdminOrdersControllerCore extends AdminController
 						if (!Validate::isLoadedObject($carrier))
 							throw new PrestaShopException('Can\'t load Carrier object');
 						$templateVars = array(
-							'{followup}' => str_replace('@', $order->shipping_number, $carrier->url),
-							'{firstname}' => $customer->firstname,
-							'{lastname}' => $customer->lastname,
-							'{id_order}' => $order->id,
-							'{shipping_number}' => $order->shipping_number,
-							'{order_name}' => $order->getUniqReference()
+							'followup' => str_replace('@', $order->shipping_number, $carrier->url),
+							'firstname' => $customer->firstname,
+							'lastname' => $customer->lastname,
+							'id_order' => $order->id,
+							'shipping_number' => $order->shipping_number,
+							'order_name' => $order->getUniqReference()
 						);
 						if (@Mail::Send((int)$order->id_lang, 'in_transit', Mail::l('Package in transit', (int)$order->id_lang), $templateVars,
 							$customer->email, $customer->firstname.' '.$customer->lastname, null, null, null, null,
@@ -522,7 +522,7 @@ class AdminOrdersControllerCore extends AdminController
 						$carrier = new Carrier($order->id_carrier, $order->id_lang);
 						$templateVars = array();
 						if ($history->id_order_state == Configuration::get('PS_OS_SHIPPING') && $order->shipping_number)
-							$templateVars = array('{followup}' => str_replace('@', $order->shipping_number, $carrier->url));
+							$templateVars = array('followup' => str_replace('@', $order->shipping_number, $carrier->url));
 
 						// Save all changes
 						if ($history->addWithemail(true, $templateVars))
@@ -612,11 +612,11 @@ class AdminOrdersControllerCore extends AdminController
 								$message = Tools::nl2br($customer_message->message);
 
 							$varsTpl = array(
-								'{lastname}' => $customer->lastname,
-								'{firstname}' => $customer->firstname,
-								'{id_order}' => $order->id,
-								'{order_name}' => $order->getUniqReference(),
-								'{message}' => $message
+								'lastname' => $customer->lastname,
+								'firstname' => $customer->firstname,
+								'id_order' => $order->id,
+								'order_name' => $order->getUniqReference(),
+								'message' => $message
 							);
 							if (@Mail::Send((int)$order->id_lang, 'order_merchant_comment',
 								Mail::l('New message regarding your order', (int)$order->id_lang), $varsTpl, $customer->email,
@@ -766,12 +766,12 @@ class AdminOrdersControllerCore extends AdminController
 								{
 									$currency = $this->context->currency;
 									$customer = new Customer((int)($order->id_customer));
-									$params['{lastname}'] = $customer->lastname;
-									$params['{firstname}'] = $customer->firstname;
-									$params['{id_order}'] = $order->id;
-									$params['{order_name}'] = $order->getUniqReference();
-									$params['{voucher_amount}'] = Tools::displayPrice($cart_rule->reduction_amount, $currency, false);
-									$params['{voucher_num}'] = $cart_rule->code;
+									$params['lastname'] = $customer->lastname;
+									$params['firstname'] = $customer->firstname;
+									$params['id_order'] = $order->id;
+									$params['order_name'] = $order->getUniqReference();
+									$params['voucher_amount'] = Tools::displayPrice($cart_rule->reduction_amount, $currency, false);
+									$params['voucher_num'] = $cart_rule->code;
 									$customer = new Customer((int)$order->id_customer);
 									@Mail::Send((int)$order->id_lang, 'voucher', sprintf(Mail::l('New voucher for your order #%s', (int)$order->id_lang), $order->reference),
 										$params, $customer->email, $customer->firstname.' '.$customer->lastname, null, null, null,
@@ -915,10 +915,10 @@ class AdminOrdersControllerCore extends AdminController
 						if ((Tools::isSubmit('generateCreditSlip') || Tools::isSubmit('generateDiscount')) && !count($this->errors))
 						{
 							$customer = new Customer((int)($order->id_customer));
-							$params['{lastname}'] = $customer->lastname;
-							$params['{firstname}'] = $customer->firstname;
-							$params['{id_order}'] = $order->id;
-							$params['{order_name}'] = $order->getUniqReference();
+							$params['lastname'] = $customer->lastname;
+							$params['firstname'] = $customer->firstname;
+							$params['id_order'] = $order->id;
+							$params['order_name'] = $order->getUniqReference();
 						}
 
 						// Generate credit slip
@@ -1026,8 +1026,8 @@ class AdminOrdersControllerCore extends AdminController
 								else
 								{
 									$currency = $this->context->currency;
-									$params['{voucher_amount}'] = Tools::displayPrice($cartrule->reduction_amount, $currency, false);
-									$params['{voucher_num}'] = $cartrule->code;
+									$params['voucher_amount'] = Tools::displayPrice($cartrule->reduction_amount, $currency, false);
+									$params['voucher_num'] = $cartrule->code;
 									@Mail::Send((int)$order->id_lang, 'voucher', sprintf(Mail::l('New voucher for your order #%s', (int)$order->id_lang), $order->reference),
 									$params, $customer->email, $customer->firstname.' '.$customer->lastname, null, null, null,
 									null, _PS_MAIL_DIR_, true, (int)$order->id_shop);
@@ -1862,9 +1862,9 @@ class AdminOrdersControllerCore extends AdminController
 				if (Validate::isLoadedObject($customer))
 				{
 					$mailVars = array(
-						'{order_link}' => Context::getContext()->link->getPageLink('order', false, (int)$cart->id_lang, 'step=3&recover_cart='.(int)$cart->id.'&token_cart='.md5(_COOKIE_KEY_.'recover_cart_'.(int)$cart->id)),
-						'{firstname}' => $customer->firstname,
-						'{lastname}' => $customer->lastname
+						'order_link' => Context::getContext()->link->getPageLink('order', false, (int)$cart->id_lang, 'step=3&recover_cart='.(int)$cart->id.'&token_cart='.md5(_COOKIE_KEY_.'recover_cart_'.(int)$cart->id)),
+						'firstname' => $customer->firstname,
+						'lastname' => $customer->lastname
 					);
 					if (Mail::Send((int)$cart->id_lang, 'backoffice_order', Mail::l('Process the payment of your order', (int)$cart->id_lang), $mailVars, $customer->email,
 							$customer->firstname.' '.$customer->lastname, null, null, null, null, _PS_MAIL_DIR_, true, $cart->id_shop))
@@ -2217,10 +2217,10 @@ class AdminOrdersControllerCore extends AdminController
 			$order = new Order(Tools::getValue('id_order'));
 
 		$data = array(
-			'{lastname}' => $order->getCustomer()->lastname,
-			'{firstname}' => $order->getCustomer()->firstname,
-			'{id_order}' => (int)$order->id,
-			'{order_name}' => $order->getUniqReference()
+			'lastname' => $order->getCustomer()->lastname,
+			'firstname' => $order->getCustomer()->firstname,
+			'id_order' => (int)$order->id,
+			'order_name' => $order->getUniqReference()
 		);
 
 		Mail::Send(

@@ -712,10 +712,10 @@ class AuthControllerCore extends FrontController
 			'account',
 			Mail::l('Welcome!'),
 			array(
-				'{firstname}' => $customer->firstname,
-				'{lastname}' => $customer->lastname,
-				'{email}' => $customer->email,
-				'{passwd}' => Tools::getValue('passwd')),
+				'firstname' => $customer->firstname,
+				'lastname' => $customer->lastname,
+				'email' => $customer->email,
+				'passwd' => Tools::getValue('passwd')),
 			$customer->email,
 			$customer->firstname.' '.$customer->lastname
 		);

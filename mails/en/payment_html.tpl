@@ -4,9 +4,10 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<title>Message from {$shop_name}</title>
-		
-		
-		<style>	@media only screen and (max-width: 300px){ 
+
+		{literal}
+		<style>
+			@media only screen and (max-width: 300px){
 				body {
 					width:218px !important;
 					margin:auto !important;
@@ -51,6 +52,7 @@
 				.space_address{display: none !important;}	
 			}
 </style>
+		{/literal}
 
 	</head>
 	<body style="-webkit-text-size-adjust:none;background-color:#fff;width:650px;font-family:Open-sans, sans-serif;color:#555454;font-size:13px;line-height:18px;margin:auto">

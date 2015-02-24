@@ -225,10 +225,10 @@ class AdminReturnControllerCore extends AdminController
 					{
 						$orderReturnState = new OrderReturnState($orderReturn->state);
 						$vars = array(
-						'{lastname}' => $customer->lastname,
-						'{firstname}' => $customer->firstname,
-						'{id_order_return}' => $id_order_return,
-						'{state_order_return}' => (isset($orderReturnState->name[(int)$order->id_lang]) ? $orderReturnState->name[(int)$order->id_lang] : $orderReturnState->name[(int)Configuration::get('PS_LANG_DEFAULT')]));
+						'lastname' => $customer->lastname,
+						'firstname' => $customer->firstname,
+						'id_order_return' => $id_order_return,
+						'state_order_return' => (isset($orderReturnState->name[(int)$order->id_lang]) ? $orderReturnState->name[(int)$order->id_lang] : $orderReturnState->name[(int)Configuration::get('PS_LANG_DEFAULT')]));
 						Mail::Send((int)$order->id_lang, 'order_return_state', Mail::l('Your order return status has changed', $order->id_lang),
 							$vars, $customer->email, $customer->firstname.' '.$customer->lastname, null, null, null,
 							null, _PS_MAIL_DIR_, true, (int)$order->id_shop);

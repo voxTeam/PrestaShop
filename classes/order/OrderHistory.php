@@ -143,12 +143,12 @@ class OrderHistoryCore extends ObjectModel
 				}
 				$links .= '</ul>';
 				$data = array(
-					'{lastname}' => $customer->lastname,
-					'{firstname}' => $customer->firstname,
-					'{id_order}' => (int)$order->id,
-					'{order_name}' => $order->getUniqReference(),
-					'{nbProducts}' => count($virtual_products),
-					'{virtualProducts}' => $links
+					'lastname' => $customer->lastname,
+					'firstname' => $customer->firstname,
+					'id_order' => (int)$order->id,
+					'order_name' => $order->getUniqReference(),
+					'nbProducts' => count($virtual_products),
+					'virtualProducts' => $links
 				);
 				// If there is at least one downloadable file
 				if (!empty($assign))
@@ -397,10 +397,10 @@ class OrderHistoryCore extends ObjectModel
 
 			$topic = $result['osname'];
 			$data = array(
-				'{lastname}' => $result['lastname'],
-				'{firstname}' => $result['firstname'],
-				'{id_order}' => (int)$this->id_order,
-				'{order_name}' => $order->getUniqReference()
+				'lastname' => $result['lastname'],
+				'firstname' => $result['firstname'],
+				'id_order' => (int)$this->id_order,
+				'order_name' => $order->getUniqReference()
 			);
 
 			if ($result['module_name'])
@@ -413,7 +413,7 @@ class OrderHistoryCore extends ObjectModel
 			if ($template_vars)
 				$data = array_merge($data, $template_vars);
 
-			$data['{total_paid}'] = Tools::displayPrice((float)$order->total_paid, new Currency((int)$order->id_currency), false);
+			$data['total_paid'] = Tools::displayPrice((float)$order->total_paid, new Currency((int)$order->id_currency), false);
 
 			if (Validate::isLoadedObject($order))
 			{
