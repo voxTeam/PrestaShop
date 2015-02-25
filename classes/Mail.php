@@ -311,7 +311,7 @@ class MailCore extends ObjectModel
 			)
 				$module_name = $res[1];
 
-			if ($module_name !== false && (Tools::file_exists($theme_path.'modules/'.$module_name.'/mails/'.$iso_template.'.txt') ||
+			if ($module_name !== false && (Tools::file_exists_cache($theme_path.'modules/'.$module_name.'/mails/'.$iso_template.'.txt') ||
 					Tools::file_exists_cache($theme_path.'modules/'.$module_name.'/mails/'.$iso_template.'.html')))
 				$template_path = $theme_path.'modules/'.$module_name.'/mails/';
 			elseif (Tools::file_exists_cache($theme_path.'mails/'.$iso_template.'.txt') || Tools::file_exists_cache($theme_path.'mails/'.$iso_template.'.html'))
@@ -363,11 +363,11 @@ class MailCore extends ObjectModel
 			$template_vars = array_map(array('Tools', 'htmlentitiesDecodeUTF8'), $template_vars);
 			$template_vars = array_map(array('Tools', 'stripslashes'), $template_vars);
 
-			if (Configuration::get('PS_LOGO_MAIL') !== false && file_exists(_PS_IMG_DIR_.Configuration::get('PS_LOGO_MAIL', null, null, $id_shop)))
+			if (Configuration::get('PS_LOGO_MAIL') !== false && Tools::file_exists_cache(_PS_IMG_DIR_.Configuration::get('PS_LOGO_MAIL', null, null, $id_shop)))
 				$logo = _PS_IMG_DIR_.Configuration::get('PS_LOGO_MAIL', null, null, $id_shop);
 			else
 			{
-				if (file_exists(_PS_IMG_DIR_.Configuration::get('PS_LOGO', null, null, $id_shop)))
+				if (Tools::file_exists_cache(_PS_IMG_DIR_.Configuration::get('PS_LOGO', null, null, $id_shop)))
 					$logo = _PS_IMG_DIR_.Configuration::get('PS_LOGO', null, null, $id_shop);
 				else
 					$template_vars['shop_logo'] = '';

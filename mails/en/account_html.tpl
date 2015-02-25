@@ -6,7 +6,7 @@
 		<title>Message from {$shop_name}</title>
 		
 		
-		<style>	@media only screen and (max-width: 300px){ 
+		{literal}<style>	@media only screen and (max-width: 300px){
 				body {
 					width:218px !important;
 					margin:auto !important;
@@ -50,10 +50,11 @@
 				.address{display: block !important;margin-bottom: 10px !important;}
 				.space_address{display: none !important;}	
 			}
-</style>
+</style>{/literal}
 
 	</head>
 	<body style="-webkit-text-size-adjust:none;background-color:#fff;width:650px;font-family:Open-sans, sans-serif;color:#555454;font-size:13px;line-height:18px;margin:auto">
+		<b>account_html</b>
 		<table class="table table-mail" style="width:100%;margin-top:10px;-moz-box-shadow:0 0 5px #afafaf;-webkit-box-shadow:0 0 5px #afafaf;-o-box-shadow:0 0 5px #afafaf;box-shadow:0 0 5px #afafaf;filter:progid:DXImageTransform.Microsoft.Shadow(color=#afafaf,Direction=134,Strength=5)">
 			<tr>
 				<td class="space" style="width:20px;padding:7px 0">&nbsp;</td>
