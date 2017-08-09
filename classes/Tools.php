@@ -2331,6 +2331,10 @@ class ToolsCore
                         fwrite($write_fd, $domain_rewrite_cond);
                     }
                     fwrite($write_fd, 'RewriteRule ^c/([a-zA-Z_-]+)(-[0-9]+)?/.+\.jpg$ %{ENV:REWRITEBASE}img/c/$1$2.jpg [L]'."\n");
+                    if (Shop::isFeatureActive()) {
+                        fwrite($write_fd, $domain_rewrite_cond);
+                    }
+                    fwrite($write_fd, 'RewriteRule ^favicon.ico$ %{ENV:REWRITEBASE}img/favicon'.((int)$uri['id_shop'] == (int)Configuration::get('PS_SHOP_DEFAULT') ? '' : '-'.(int)$uri['id_shop']).'.ico [L]'."\n");
                 }
 
                 fwrite($write_fd, "# AlphaImageLoader for IE and fancybox\n");
