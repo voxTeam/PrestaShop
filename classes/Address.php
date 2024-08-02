@@ -310,6 +310,11 @@ class AddressCore extends ObjectModel
 		WHERE `id_address_delivery` = '.(int)$this->id.'
 		OR `id_address_invoice` = '.(int)$this->id);
 
+        Hook::exec('actionAddressIsUsed', [
+            'address' => $this,
+            '$result' => &$result,
+        ]);
+
         return $result > 0 ? (int)$result : false;
     }
 
